@@ -25,7 +25,7 @@ const AboutUs = () => {
   ];
 
   return (
-    <Grid container spacing={2}>
+    <Grid container spacing={2} sx={{marginTop:'8%'}}>
       {/* Image on the left */}
       <Grid item xs={12} sm={6}>
         <img src={AboutImg} alt="About Us" style={{ width: '100%', height: 'auto' }} />

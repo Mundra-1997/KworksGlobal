@@ -15,13 +15,14 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 // import Logo from '../image/logod.png'
 import logodImage from '../image/logod.jpg';
+import { useNavigate } from 'react-router-dom';
 const drawerWidth = 240;
-const navItems = ['Home', 'About us','Contact', 'Pricing'];
+// const navItems = ['Home', 'About us','Contact', 'Pricing'];
 
 const Navbar = (props) => {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
-
+  const navigate = useNavigate()
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
@@ -30,11 +31,19 @@ const Navbar = (props) => {
     <div>
       <Divider />
       <List>
-        {navItems.map((item) => (
-          <ListItem button key={item}>
-            <ListItemText primary={item} />
+     
+          <ListItem  >
+            <ListItemText primary='Home' onClick={()=>navigate('/')} />
           </ListItem>
-        ))}
+          <ListItem  onClick={()=>navigate('/about-us')}>
+            <ListItemText primary='About Us' />
+          </ListItem>
+          <ListItem >
+            <ListItemText primary='Contact' />
+          </ListItem>
+          <ListItem >
+            <ListItemText primary='Pricing' />
+          </ListItem>
       </List>
     </div>
   );
@@ -59,11 +68,19 @@ const Navbar = (props) => {
             <img src={logodImage} alt="Your Logo" width="100" height="80" />
           </Box>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-            {navItems.map((item) => (
-              <Button key={item} color="inherit">
-                {item}
+          
+              <Button color="inherit" onClick={()=>navigate('/')}>
+                Home
               </Button>
-            ))}
+              <Button color="inherit" onClick={()=>navigate('/about-us')}>
+                 About Us
+                </Button>
+                <Button color="inherit">
+                Contact
+                </Button>
+                <Button color="inherit">
+                Pricing
+                </Button>
           </Box>
         </Toolbar>
       </AppBar>
