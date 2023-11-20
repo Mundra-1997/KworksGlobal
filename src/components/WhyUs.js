@@ -20,27 +20,27 @@ const WhyUs = () => {
       <Grid item xs={12} sm={6}>
         <Box sx={{ display: 'flex', flexDirection: { xs: 'column', sm: 'row' }, gap: '16px' }}>
           {/* Box 1 */}
-          <Box sx={{ flex: '1 1 100%', bgcolor: '#f0f0f0', p: 2, borderRadius: '4px', mb: { xs: 3, sm: 0 } }}>
+          <Box sx={{ flex: '1 1 100%', bgcolor: '#FFA8A8', p: 2, borderRadius: '4px', mb: { xs: 3, sm: 0 } }}>
             <Typography variant="h6">Expertise</Typography>
             <Typography variant="body1" sx={{ mt: 1 }}>
             Our team of financial experts has a track record of success in supporting businesses like yours.
             </Typography>
           </Box>
           {/* Box 2 */}
-          <Box sx={{ flex: '1 1 100%', bgcolor: '#f0f0f0', p: 2, borderRadius: '4px' }}>
+          <Box sx={{ flex: '1 1 100%', bgcolor: '#FFD1D1', p: 2, borderRadius: '4px' }}>
             <Typography variant="h6">Customized Solutions</Typography>
             <Typography variant="body1" sx={{ mt: 1 }}>
              We tailor our FaaS offerings to meet your unique needs and goals.
 
             </Typography>
           </Box>
-          <Box sx={{ flex: '1 1 100%', bgcolor: '#f0f0f0', p: 2, borderRadius: '4px' }}>
+          <Box sx={{ flex: '1 1 100%', bgcolor: '#FFA8A8', p: 2, borderRadius: '4px' }}>
             <Typography variant="h6">Scalability</Typography>
             <Typography variant="body1" sx={{ mt: 1 }}>
             As your business grows, our FaaS solution can scale with you.
             </Typography>
           </Box>
-          <Box sx={{ flex: '1 1 100%', bgcolor: '#f0f0f0', p: 2, borderRadius: '4px' }}>
+          <Box sx={{ flex: '1 1 100%', bgcolor: '#FFD1D1', p: 2, borderRadius: '4px' }}>
             <Typography variant="h6">Efficiency & Agility</Typography>
             <Typography variant="body1" sx={{ mt: 1 }}>
             No hassle of in-house finance management but gain agility with outsourced finance team, allowing you to focus on growing your business.

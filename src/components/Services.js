@@ -68,7 +68,7 @@ const Services = () => {
       <Slider ref={sliderRef} {...settings}>
         {data.map((service, index) => (
           <div key={index}>
-            <Paper elevation={3} style={{ height: '80%', display: 'flex', flexDirection: 'row', justifyContent: 'space-between', padding: '20px', width: '60%', margin: 'auto',backgroundColor:'lightblue' }}>
+            <Paper elevation={3} sx={{ height: '80%', display: 'flex', flexDirection: 'row', justifyContent: 'space-between', padding: '20px', width: '60%', margin: 'auto', bgcolor: '#FFD1D1' }}>
               <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px', marginTop: '80px' }}>
                 <img src={service.image} alt={service.title} style={{ width: '60%', height: '60%' }} />
               </div>

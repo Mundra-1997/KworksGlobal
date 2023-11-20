@@ -51,9 +51,9 @@ const Navbar = (props) => {
   const container = window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: 'flex' }}>
+    <Box sx={{ display: 'flex'}}>
       <CssBaseline />
-      <AppBar position="fixed">
+      <AppBar  position="fixed" sx={{ backgroundColor: '#FFA8A8' }}>
         <Toolbar>
           <IconButton
             color="inherit"
