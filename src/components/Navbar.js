@@ -42,7 +42,7 @@ const Navbar = (props) => {
             <ListItemText primary='Contact' />
           </ListItem>
           <ListItem >
-            <ListItemText primary='Pricing' />
+            <ListItemText primary='Pricing' onClick={()=>navigate('/pricing')} />
           </ListItem>
       </List>
     </div>
@@ -78,7 +78,7 @@ const Navbar = (props) => {
                 <Button color="inherit">
                 Contact
                 </Button>
-                <Button color="inherit">
+                <Button color="inherit" onClick={()=>navigate('/pricing')}>
                 Pricing
                 </Button>
           </Box>

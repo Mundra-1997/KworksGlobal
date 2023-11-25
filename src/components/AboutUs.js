@@ -11,7 +11,7 @@ import SupportIcon from '@mui/icons-material/Support';
 import SpeedIcon from '@mui/icons-material/Speed';
 import AnimationIcon from '@mui/icons-material/Animation';
 import BusinessIcon from '@mui/icons-material/Business'; // Assuming an icon for Ownership Mindset
-import AboutImg from '../image/AboutUs.png';
+import AboutImg from '../image/About.jpg';
 import { ListItemIcon } from '@mui/material';
 
 const AboutUs = () => {
