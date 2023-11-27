@@ -1,0 +1,30 @@
+.banner-div{
+    background-image: url('../image/kooo.jpg');
+    width: 100vw;
+    height: 80vh;
+    opacity: 0.9;
+    margin-top: 5rem;
+    background-size: cover;
+    overflow: auto;
+}
+
+.banner-heading{
+    color: #FFC000;
+    text-shadow: black;
+    background-color: #3f4a4fc2;
+    font-size: 2rem;
+   
+    width: 80vw;
+    height: auto;
+     margin-top: 20%;
+    font-weight:bolder
+}
+.banner-subheading{
+    background-color: #FFC000;
+    color: #3F4A4F;
+    text-align: center;
+}
+.main-div{
+    display: flex;
+    flex-direction: column;
+}
