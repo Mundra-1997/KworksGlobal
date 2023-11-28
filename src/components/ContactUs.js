@@ -54,7 +54,7 @@ const ContactUs = () => {
         
         startIcon={<SendIcon />}
       >
-        <span >Delete</span>
+        <span >Send</span>
       </Button>
               
 
