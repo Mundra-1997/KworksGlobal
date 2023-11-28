@@ -39,7 +39,7 @@ const Navbar = (props) => {
             <ListItemText primary='About Us' />
           </ListItem>
           <ListItem >
-            <ListItemText primary='Contact' />
+            <ListItemText primary='Contact' onClick={()=>navigate('/contact')} />
           </ListItem>
           <ListItem >
             <ListItemText primary='Pricing' onClick={()=>navigate('/pricing')} />
@@ -75,7 +75,7 @@ const Navbar = (props) => {
               <Button color="inherit" onClick={()=>navigate('/about-us')}>
                  About Us
                 </Button>
-                <Button color="inherit">
+                <Button color="inherit" onClick={()=>navigate('/contact')}>
                 Contact
                 </Button>
                 <Button color="inherit" onClick={()=>navigate('/pricing')}>
