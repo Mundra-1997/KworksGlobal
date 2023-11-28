@@ -1,5 +1,6 @@
 import React from 'react';
 import Paper from '@mui/material/Paper';
+import 'animate.css';
 import './Service.css'
 import { useState, useEffect,useRef } from 'react';
 import Typography from '@mui/material/Typography';
@@ -45,13 +46,14 @@ const Services = () => {
 
   return (
     <div className='service-container'>
+      <h1 className='service-title'>Our Services</h1>
       <Paper elevation={5} className='service-paper'>
         <div><img className='service-img' src={data[0].image} alt='pics'></img></div>
-        <div><h3>Finance As A Service</h3></div>
+        <p className='service-heading'>Finance As A Services</p>
       </Paper>
       <Paper elevation={5} className='service-paper'>
         <div><img className='service-img'src={data[1].image} alt='pics'></img></div>
-        <div><h3>Fractional CFO Service</h3></div>
+        <p className='service-heading'>Fractional CFO Services</p>
       </Paper>
     </div>
   )
