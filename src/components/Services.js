@@ -1,5 +1,6 @@
 import React from 'react';
 import Paper from '@mui/material/Paper';
+import './Service.css'
 import { useState, useEffect,useRef } from 'react';
 import Typography from '@mui/material/Typography';
 import List from '@mui/material/List';
@@ -12,10 +13,12 @@ import Carousel from 'react-carousel';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import advisory from '../image/advisory.png'
+import tax from '../image/taxation.png'
 const data = [
   {
     title: "Finance As Service",
-    image: Acc,
+    image: advisory,
     points: [
       "Bookkeeping & Accounting: Stay organized with accurate and up-to-date financial records.",
       "Financial Analysis: Gain insights into your financial health and make data-driven decisions.",
@@ -26,7 +29,7 @@ const data = [
   },
   {
     title: "Fractional CFO Service",
-    image: Dcc,
+    image: tax,
     points: [
       "Strategic Financial Planning: Crafting a financial roadmap to help you achieve your business goals.",
       "Budgeting and Forecasting: Accurate financial predictions for informed decision-making.",
@@ -38,59 +41,20 @@ const data = [
 ];
 
 const Services = () => {
-  const sliderRef = useRef(null);
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      sliderRef.current.slickNext();
-    }, 5000); // Change the interval time (in milliseconds) as needed
-
-    return () => {
-      clearInterval(interval);
-    };
-  }, []);
-
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: false, // Set to true if you want autoplay
-    autoplaySpeed: 5000, // Change the autoplay interval time (in milliseconds) as needed
-    beforeChange: (current, next) => setCurrentSlide(next),
-  };
+   
 
   return (
-    <div style={{ marginTop: '7%', textAlign: 'center' }}>
-      <Typography variant='h4'>Our Services</Typography>
-      <Slider ref={sliderRef} {...settings}>
-        {data.map((service, index) => (
-          <div key={index}>
-            <Paper elevation={3} sx={{ height: '80%', display: 'flex', flexDirection: 'row', justifyContent: 'space-between', padding: '20px', width: '60%', margin: 'auto', bgcolor: '#FFD1D1' }}>
-              <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px', marginTop: '80px' }}>
-                <img src={service.image} alt={service.title} style={{ width: '60%', height: '60%' }} />
-              </div>
-              <div style={{ textAlign: 'center' }}>
-                <Typography variant="h5" gutterBottom>
-                  {service.title}
-                </Typography>
-                <List>
-                  {service.points.map((point, i) => (
-                    <ListItem key={i}>
-                      <ListItemText primary={point} />
-                    </ListItem>
-                  ))}
-                </List>
-              </div>
-            </Paper>
-          </div>
-        ))}
-      </Slider>
-     
+    <div className='service-container'>
+      <Paper elevation={5} className='service-paper'>
+        <div><img className='service-img' src={data[0].image} alt='pics'></img></div>
+        <div><h3>Finance As A Service</h3></div>
+      </Paper>
+      <Paper elevation={5} className='service-paper'>
+        <div><img className='service-img'src={data[1].image} alt='pics'></img></div>
+        <div><h3>Fractional CFO Service</h3></div>
+      </Paper>
     </div>
-  );
+  )
 };
 
 export default Services;
