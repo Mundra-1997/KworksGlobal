@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Pricing from './components/Pricing';
+// ayush
 function App() {
   return (
     <div className='App'>
