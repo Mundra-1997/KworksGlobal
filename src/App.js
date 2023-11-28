@@ -9,7 +9,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 function App() {
   return (
     <div className='App'>
-      <div className='background-image'></div> {/* Background image container */}
+    
       <div className='content'>
         <Router>
           <Navbar />

@@ -1,20 +1,25 @@
+.main-div {
+  display: flex;
+  flex-direction: column;
+  width: 110%;
+  margin-top: 5rem;
+}
 .banner-div{
     background-image: url('../image/kooo.jpg');
-    width: 100vw;
+    width: 100%;
     height: 80vh;
     opacity: 0.9;
-    margin-top: 5rem;
     background-size: cover;
-    overflow: auto;
+   
 }
 
 .banner-heading{
-    color: #FFC000;
+    color: white;
     text-shadow: black;
     background-color: #3f4a4fc2;
     font-size: 2rem;
    
-    width: 80vw;
+    width: 50vw;
     height: auto;
      margin-top: 20%;
     font-weight:bolder
@@ -23,15 +28,21 @@
     background-color: #FFC000;
     color: #3F4A4F;
     text-align: center;
+  
+}
+.subheading-h1{
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 4s; 
+    /* font-style: 'Caveat'  !important */
 }
 .main-div{
     display: flex;
     flex-direction: column;
 }
 
-.banner-subheading h1 {
-    animation: fadeIn 1s ease-in forwards;  /* Apply the animation to the h1 elements */
-    opacity: 0; /* Initial opacity */
+/* .banner-subheading h1 {
+    animation: fadeIn 1s ease-in forwards; 
+    opacity: 0; 
   }
 @keyframes fadeIn {
     from {
@@ -42,4 +53,52 @@
       opacity: 1;
       transform: translateY(0);
     }
+  } */
+
+  @media (max-width:767px) {
+   .banner-heading{
+    width: 80%;
+    height: auto;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+   }
+   .banner-div{
+    background-image: url('../image/kooo.jpg');
+    background-size: cover;
+    height: 80%;
+   
+   }
+   .banner-subheading {
+    background-color: #FFC000;
+    color: #3F4A4F;
+    text-align: center;
+    font-size: x-small;
+}
+    
+  }
+  @media  (min-width: 768px) and (max-width: 1023px) {
+    .banner-heading {
+      color: white;
+      text-shadow: black;
+      background-color: #3f4a4fc2;
+      font-size: 3rem;
+      width: 90vw;
+      margin-bottom: 5rem;
+      font-weight: bolder;
+      font-size: xx-large;
+  }
+     .banner-div {
+      background-image: url('../image/kooo.jpg');
+      width: 110%;
+      height: auto;
+      opacity: 0.9;
+     
+      background-size: cover;
+  }
+  .banner-subheading {
+    background-color: #FFC000;
+    color: #3F4A4F;
+    text-align: center;
+    font-size: larger;
+}
   }

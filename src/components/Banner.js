@@ -1,5 +1,6 @@
 import React from 'react'
 import './Banner.css'
+import 'animate.css';
 const Banner = () => {
   return (
     <div className='main-div'>
@@ -10,8 +11,8 @@ const Banner = () => {
 </div>
 </div>
 <div className='banner-subheading'>
-            <h1>WE WORKS THE <span style={{color:'white'}}>NUMBERS!</span></h1>
-            <h1>SO YOU CAN DO <span style={{color:'white'}}>WONDERS!</span></h1>
+            <h1 className='subheading-h1'>WE WORKS THE <span style={{color:'white'}}>NUMBERS!</span></h1>
+            <h1 className='subheading-h1'>SO YOU CAN DO <span style={{color:'white'}}>WONDERS!</span></h1>
             </div>
 
       
