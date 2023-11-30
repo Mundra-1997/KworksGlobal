@@ -79,7 +79,7 @@ const Navbar = (props) => {
                 Contact
                 </Button>
                 <Button color="inherit" onClick={()=>navigate('/pricing')}>
-                Pricing
+                Services
                 </Button>
           </Box>
         </Toolbar>

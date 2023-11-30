@@ -11,7 +11,7 @@ import SupportIcon from '@mui/icons-material/Support';
 import SpeedIcon from '@mui/icons-material/Speed';
 import AnimationIcon from '@mui/icons-material/Animation';
 import BusinessIcon from '@mui/icons-material/Business'; // Assuming an icon for Ownership Mindset
-import AboutImg from '../image/About.jpg';
+import AboutImg from '../image/fhwhhw.jpg';
 import { ListItemIcon } from '@mui/material';
 
 const AboutUs = () => {
@@ -25,10 +25,10 @@ const AboutUs = () => {
   ];
 
   return (
-    <Grid container spacing={2} sx={{marginTop:'8%'}}>
+    <Grid container spacing={2} sx={{marginTop:'10%'}}>
       {/* Image on the left */}
       <Grid item xs={12} sm={6}>
-        <img src={AboutImg} alt="About Us" style={{ width: '100%', height: 'auto' }} />
+        <img src={AboutImg} alt="About Us" style={{ width: '80%', height: 'auto' }} />
       </Grid>
       {/* Text content on the right */}
       <Grid item xs={12} sm={6}>
@@ -54,6 +54,9 @@ const AboutUs = () => {
             ))}
           </List>
         </Paper>
+      </Grid>
+      <Grid>
+        <Typography variant='h4'>From Founder's Pen</Typography>
       </Grid>
     </Grid>
   );
