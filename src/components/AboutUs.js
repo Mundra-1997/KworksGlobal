@@ -1,5 +1,6 @@
 import React from 'react';
 import Grid from '@mui/material/Grid';
+import './AboutUs.css'
 import Typography from '@mui/material/Typography';
 import Paper from '@mui/material/Paper';
 import List from '@mui/material/List';
@@ -16,50 +17,67 @@ import { ListItemIcon } from '@mui/material';
 
 const AboutUs = () => {
   const keyFeatures = [
-    { text: 'Team of Experts', icon: <AccountCircleIcon /> },
-    { text: 'Startup Friendly', icon: <AccessibilityNewIcon /> },
-    { text: 'Quick Support', icon: <SupportIcon /> },
-    { text: 'Efficiency', icon: <SpeedIcon /> },
-    { text: 'Transparency', icon: <AnimationIcon /> },
-    { text: 'Ownership Mindset', icon: <BusinessIcon /> },
+    { text: 'Team of Experts', icon: <AccountCircleIcon fontSize='80px'/> },
+    { text: 'Startup Friendly', icon: <AccessibilityNewIcon fontSize='80px' /> },
+    { text: 'Quick Support', icon: <SupportIcon fontSize='80px'/> },
+    { text: 'Efficiency', icon: <SpeedIcon fontSize='80px'/> },
+    { text: 'Transparency', icon: <AnimationIcon fontSize='80px'/> },
+    { text: 'Ownership Mindset', icon: <BusinessIcon fontSize='80px'/> },
   ];
 
   return (
-    <Grid container spacing={2} sx={{marginTop:'10%'}}>
+    <>
+    <div className='container'>
       {/* Image on the left */}
-      <Grid item xs={12} sm={6}>
-        <img src={AboutImg} alt="About Us" style={{ width: '80%', height: 'auto' }} />
-      </Grid>
+      <div className='sub-container-1'>
+        <img src={AboutImg} alt="About Us"  />
+      </div>
       {/* Text content on the right */}
-      <Grid item xs={12} sm={6}>
+      <div  className='sub-container-2'>
         <Paper elevation={3} style={{ padding: '20px', height: '100%' }}>
-          <Typography variant="h5" gutterBottom>
-            We Work the Numbers! So you can Work Wonders!
+          <Typography variant="h3" style={{overflow:'hidden'}}  gutterBottom>
+            We Work the Numbers! <br/>
+            So you can Work Wonders!
           </Typography>
-          <Typography variant="body1" paragraph>
+          <Typography variant="h5" paragraph>
             Founded in September 2023, K Works Global Solutions' vision is to transform the financial landscape for businesses of all sizes and bring the future of managed financial services to small to medium-sized companies.
             Our mission is to empower businesses with the appropriate financial tools and expertise needed so they can perform wonders. We believe that by simplifying financial management, we enable our clients to focus on what they do best while we handle the numbers. Together, we're shaping a future where financial success is within reach for every business.
           </Typography>
-          <Typography variant="h6" gutterBottom>
-            Key Features:
-          </Typography>
-          {/* Bullet points with icons */}
-          <List>
-            {keyFeatures.map((feature, index) => (
-              <ListItem key={index}>
-                <ListItemIcon>{feature.icon}</ListItemIcon>
-                
-                <ListItemText primary={feature.text} />
-              </ListItem>
-            ))}
-          </List>
+          
         </Paper>
-      </Grid>
-      <Grid>
-        <Typography variant='h4'>From Founder's Pen</Typography>
-      </Grid>
-    </Grid>
+      </div>
+      
+    </div>
+    <div>
+    <Typography variant='h3' sx={{overflow:'hidden', marginLeft:'1rem'}}>Key Features</Typography>
+    <div className='container-2'>
+      
+    {keyFeatures.map((feature, index) => (
+              <div  className='ListItem' key={index}>
+                <span >{feature.icon}</span>
+                
+                <span>{feature.text}</span>
+              </div>
+            ))}
+  </div>
+  </div>
+  </>
   );
 };
 
 export default AboutUs;
+
+
+{/* <Typography variant="h4" gutterBottom>
+            Key Features:
+          </Typography>
+       
+          <ul className='main-list' >
+            {keyFeatures.map((feature, index) => (
+              <li className='ListItem' key={index}>
+                <span >{feature.icon}</span>
+                
+                <span>{feature.text}</span>
+              </li>
+            ))}
+          </ul> */}
