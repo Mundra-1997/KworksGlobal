@@ -1,0 +1,214 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Caveat', sans-serif !important;
+    overflow-x: hidden;
+}
+
+.contact {
+    height: 100vh;
+    width: 100%;
+    margin-top: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact main {
+    background-color: #FFC000;
+    /* height: 36rem; */
+    width: 70%;
+    padding: 3rem;
+    border-radius: 0 200px 200px 0;
+
+}
+
+.mainSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.mainSection div {
+    width: 100%;
+
+}
+
+.mainSection div span {
+    display: flex;
+    align-items: center;
+    margin: 20%;
+    justify-content: space-between;
+}
+
+form {
+    width: 100%;
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputField {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 60%;
+    margin: 0.5rem;
+}
+
+.inputField label {
+    font: 400 1.2rem sans-serif;
+    width: 20%;
+    margin: 0 1rem;
+}
+
+.textArea {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 60%;
+    margin: 0.5rem;
+}
+
+.textArea label{
+    font: 400 1.2rem sans-serif;
+    width: 20%;
+    margin: 0 1rem;
+}
+.textArea textarea {
+    align-self: stretch;
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid rgba(123, 123, 123, 0.6);
+    outline: none;
+}
+
+.inputField input {
+    align-self: stretch;
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid rgba(123, 123, 123, 0.6);
+    outline: none;
+}
+
+
+button {
+    margin: 3rem 0;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #5853ff;
+    color: rgba(0, 0, 0, 0.87);
+    width: 200px;
+    font: 500 1rem sans-serif;
+
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1024px) {
+    .contact main {
+        /* height: 100vh; */
+        width: 76%;
+        /* border-radius: 0; */
+        text-align: center;
+        color: rgba(0, 0, 0, 0.87);
+        /* background-color: #fff; */
+    }
+    .mainSection{
+        flex-direction: column-reverse;
+    }
+    form{
+        width: 170%;
+        margin: 2%;
+    }
+
+    .contact {
+        background-color: #fff;
+    }
+
+    .inputField {
+        width: 77%;
+    }
+    .mainSection div{
+        width: 50%;
+    }
+    .mainSection div span {
+        margin: 13%;
+    }
+    .textArea textarea {
+        
+        width: 80%;
+        
+    }
+    
+    .inputField input {
+        width: 80%;
+        
+    }
+
+}
+@media screen and (max-width: 600px) {
+    .contact main{
+        background-color: white;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .contact main h1 {
+        margin: 1rem;
+    }
+
+    .contact form {
+        margin: 0%;
+    }
+/* 
+    .inputField {
+        width: 100%;
+    } */
+
+    .inputField label {
+        display: none;
+    }
+    .textArea label{
+        display: none;
+    }
+    .textArea textarea{
+        width: 100%;
+    }
+
+    .inputField input {
+        width: 100%;
+    }
+}
+/* @media screen and (max-width: 414px) {
+    .contact main {
+        padding: 1rem;
+    }
+
+    .contact main h1 {
+        margin: 1rem;
+    }
+
+    .contact form {
+        margin: 0%;
+    }
+
+    .inputField {
+        width: 100%;
+    }
+
+    .inputField label {
+        display: none;
+    }
+
+    .inputField input {
+        width: 100%;
+    }
+} */
