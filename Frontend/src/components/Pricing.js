@@ -33,32 +33,7 @@ const Pricing = () => {
   const rows = Object.keys(data.rows);
 
   return (
-    <Container maxWidth="md">
-      <Box marginTop={15}> {/* Adjust margin top */}
-        <TableContainer component={Paper}>
-          <Table size="small"> {/* Adjust table size */}
-            <TableHead>
-              <TableRow>
-                <TableCell></TableCell>
-                {data.columns.map((column, index) => (
-                  <TableCell key={index}>{column}</TableCell>
-                ))}
-              </TableRow>
-            </TableHead>
-            <TableBody>
-              {rows.map((rowKey, rowIndex) => (
-                <TableRow key={rowIndex}>
-                  <TableCell>{rowKey}</TableCell>
-                  {data.rows[rowKey].map((cell, cellIndex) => (
-                    <TableCell key={cellIndex}>{cell}</TableCell>
-                  ))}
-                </TableRow>
-              ))}
-            </TableBody>
-          </Table>
-        </TableContainer>
-      </Box>
-    </Container>
+   <>hfwijjwd</>
   );
 };
 
