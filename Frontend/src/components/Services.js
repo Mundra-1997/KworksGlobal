@@ -2,16 +2,7 @@ import React from 'react';
 import Paper from '@mui/material/Paper';
 import 'animate.css';
 import './Service.css'
-import { useState, useEffect,useRef } from 'react';
-import Typography from '@mui/material/Typography';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemText from '@mui/material/ListItemText';
-import Grid from '@mui/material/Grid';
-import Acc from '../image/accounting.png';
-import Dcc from '../image/advisory.png';
-import Carousel from 'react-carousel';
-import Slider from 'react-slick';
+import {useNavigate} from 'react-router-dom'
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import advisory from '../image/advisory.png'
@@ -43,11 +34,11 @@ const data = [
 
 const Services = () => {
    
-
+ const navigate = useNavigate()
   return (
     <div className='service-container'>
       <h1 className='service-title'>Our Services</h1>
-      <Paper elevation={5} className='service-paper'>
+      <Paper elevation={5} className='service-paper' onClick={()=>navigate('services/finance')}>
         <div><img className='service-img' src={data[0].image} alt='pics'></img></div>
         <p className='service-heading'>Finance As A Services</p>
       </Paper>

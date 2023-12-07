@@ -5,6 +5,7 @@ import Home from './components/Home';
 import Pricing from './components/Pricing';
 import Contact from './components/ContactUs';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import FinanceAsService from './components/FinanceAsService';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path='/' element={<Home />} />
             <Route path='/pricing' element={<Pricing />} />
             <Route path='/contact' element={<Contact />} />
+            <Route path='/services/finance' element={<FinanceAsService/>} />
           </Routes>
         </Router>
       </div>

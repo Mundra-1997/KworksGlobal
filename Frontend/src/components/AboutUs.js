@@ -48,7 +48,7 @@ const AboutUs = () => {
       </div>
       
     </div>
-    <div>
+    <div >
     <h2 className="key-features" sx={{overflow:'hidden', marginLeft:'1rem'}}>Key Features</h2>
     <div className='container-2'>
       
