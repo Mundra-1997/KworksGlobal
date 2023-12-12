@@ -6,6 +6,7 @@ import Pricing from './components/Pricing';
 import Contact from './components/ContactUs';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import FinanceAsService from './components/FinanceAsService';
+import CfoServices from './components/CfoServices';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path='/pricing' element={<Pricing />} />
             <Route path='/contact' element={<Contact />} />
             <Route path='/services/finance' element={<FinanceAsService/>} />
+            <Route path='/services/cfo' element={<CfoServices/>}/>
           </Routes>
         </Router>
       </div>

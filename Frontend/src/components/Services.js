@@ -42,7 +42,7 @@ const Services = () => {
         <div><img className='service-img' src={data[0].image} alt='pics'></img></div>
         <p className='service-heading'>Finance As A Services</p>
       </Paper>
-      <Paper elevation={5} className='service-paper'>
+      <Paper elevation={5} className='service-paper' onClick={()=>navigate('services/cfo')}>
         <div><img className='service-img'src={data[1].image} alt='pics'></img></div>
         <p className='service-heading'>Fractional CFO Services</p>
       </Paper>
