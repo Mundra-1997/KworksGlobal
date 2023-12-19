@@ -3,6 +3,7 @@ import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import capitalP from '../image/200w.webp';
+import Divider from '@mui/material/Divider';
 import passion from '../image/passion.jpg'
 import partnership from '../image/partnership.jpg'
 import professionalism from '../image/professionalism.jpg'
@@ -46,11 +47,14 @@ const Values = () => {
         <div className='values-sub-container'>
 
           <div className='boxes'>
-            <div className='div-professionalism'>Professionalism</div>  <div className='div-des'>{data[0].des}</div> </div>
+            <div className='div-professionalism'>Professionalism<div></div></div>  <div className='div-des'>{data[0].des}</div> </div>
+        
           <div className='boxes'>
-            <div className='div-partnership'>Partnership</div> <div className='div-des'>{data[1].des}</div></div>
-          <div className='boxes'><div className='div-passion'>Passion</div>  <div className='div-des'>{data[2].des}</div></div>
-          <div className='boxes'><div className='div-performance'>Performance</div> <div className='div-des'>{data[3].des}</div></div>
+            <div className='div-partnership'>Partnership<div></div></div> <div className='div-des'>{data[1].des}</div></div>
+           
+          <div className='boxes'><div className='div-passion'>Passion<div></div></div>  <div className='div-des'>{data[2].des}</div></div>
+        
+          <div className='boxes'><div className='div-performance'>Performance<div></div></div> <div className='div-des'>{data[3].des}</div></div>
           </div> 
           
            

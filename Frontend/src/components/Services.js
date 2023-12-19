@@ -38,14 +38,22 @@ const Services = () => {
   return (
     <div className='service-container'>
       <h1 className='service-title'>Our Services</h1>
+      <div className='boxesss' >
       <Paper elevation={5} className='service-paper' onClick={()=>navigate('services/finance')}>
         <div><img className='service-img' src={data[0].image} alt='pics'></img></div>
-        <p className='service-heading'>Finance As A Services</p>
+        <p className='service-heading'>Finance As A Services<span style={{ display: 'block',
+    width: '100%',
+    height: '0.5rem',
+    backgroundColor: '#134d65'}}></span></p>
       </Paper>
       <Paper elevation={5} className='service-paper' onClick={()=>navigate('services/cfo')}>
         <div><img className='service-img'src={data[1].image} alt='pics'></img></div>
-        <p className='service-heading'>Fractional CFO Services</p>
+        <p className='service-heading'>Fractional CFO Services<span style={{ display: 'block',
+    width: '100%',
+    height: '0.5rem',
+    backgroundColor: '#fec010'}}></span></p>
       </Paper>
+      </div>
     </div>
   )
 };

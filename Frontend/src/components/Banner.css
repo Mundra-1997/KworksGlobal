@@ -5,35 +5,54 @@
   margin-top: 5rem;
 }
 .banner-div{
-    background-image: url('../image/kooo.jpg');
+    background-image: url('../image/Boston\ Skyline-03.png');
     width: 100%;
     height: 80vh;
     opacity: 0.9;
     background-size: cover;
+    background-position: 10% 5%; 
+
    
 }
 
 .banner-heading{
-    color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    color: '#565f66';
     text-shadow: black;
-    background-color: #3f4a4fc2;
-    font-size: 2rem;
+    background-color: #e6edf0c2;
    
     width: 50vw;
-    height: auto;
-     margin-top: 20%;
-    font-weight:bolder
+    height: 100%;
+}
+.banner-heading p{
+  font-size: 2rem;
+  text-align: left;
+}
+.banner-div p span{
+  font-weight: bold;
+}
+.banner-heading button{
+  background-color: #28aee4;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 5rem;
 }
 .banner-subheading{
-    background-color: #FFC000;
-    color: #3F4A4F;
+    background-color: #fec010;
+    color: #134d65;
     text-align: center;
-  
+    font-size: 2rem;
 }
 .subheading-h1{
   animation: bounce; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 4s; 
     /* font-style: 'Caveat'  !important */
+}
+.subheading-h1 span{
+  font-weight: bolder;
 }
 .main-div{
     display: flex;

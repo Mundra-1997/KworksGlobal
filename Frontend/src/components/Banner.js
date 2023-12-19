@@ -5,14 +5,18 @@ const Banner = () => {
   return (
     <div className='main-div'>
       <div className='banner-div'>
-         <div className='banner-heading'>At K Works Global Solutions,<br/>
-         we understand the evolving needs of businesses and offer a <br/>
-         tailored FaaS solution to enhance your financial operations.
+         <div className='banner-heading'>
+          <h1>K WORKS GLOBAL SOLUTIONS</h1 >
+          <p>Tailored <span>FaaS Solutions</span><br/>
+           for evolving buisness needs
+          </p>
+          <button>Contact Us</button>
 </div>
+
 </div>
 <div className='banner-subheading'>
-            <h1 className='subheading-h1'>WE WORKS THE <span style={{color:'white'}}>NUMBERS!</span></h1>
-            <h1 className='subheading-h1'>SO YOU CAN DO <span style={{color:'white'}}>WONDERS!</span></h1>
+            <p className='subheading-h1'>We work the <span>numbers</span>,so you can do <span>wonders!</span></p>
+          
             </div>
 
       
