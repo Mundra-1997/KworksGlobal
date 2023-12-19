@@ -82,7 +82,7 @@
     margin-bottom: 1rem;
    }
    .banner-div{
-    background-image: url('../image/kooo.jpg');
+   
     background-size: cover;
     height: 80%;
    
@@ -107,7 +107,7 @@
       font-size: xx-large;
   }
      .banner-div {
-      background-image: url('../image/kooo.jpg');
+    
       width: 110%;
       height: auto;
       opacity: 0.9;
