@@ -1,0 +1,26 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    height: 3rem;
+    margin: 0;
+
+}
+.logo_img img{
+    width: 10rem;
+    height: 4rem;
+}
+.mob_view{
+    display: none;
+}
+
+
+@media (max-width:767px){
+    .mob_view{
+        display: inline-block;
+    }
+    .nav_items{
+        display: none;
+    }
+}
