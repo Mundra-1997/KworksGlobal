@@ -2,14 +2,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0;
+    padding: 1rem;
     height: 3rem;
     margin: 0;
-
+    width: 100vw;
+    overflow-x: hidden;
+   
 }
 .logo_img img{
     width: 10rem;
-    height: 4rem;
+    height: 2rem;
 }
 .mob_view{
     display: none;
@@ -17,10 +19,16 @@
 
 
 @media (max-width:767px){
-    .mob_view{
-        display: inline-block;
-    }
     .nav_items{
         display: none;
+    }
+    .mob_view{
+        display: inline-block;
+        width: 3rem;
+        height: auto;
+        background-color:  #79c8a4;
+    }
+    .nav_items{
+        display: none-;
     }
 }

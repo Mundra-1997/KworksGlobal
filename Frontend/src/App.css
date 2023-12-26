@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: column;
   /* Other general styles for your app */
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 /* .background-image {
@@ -19,7 +21,5 @@
 } */
 
 .content {
-  /* Styles for your main content */
-  position: relative; /* Ensure positioning context for children */
-  z-index: 5; /* Above the background container */
+ overflow-x: hidden;
 }

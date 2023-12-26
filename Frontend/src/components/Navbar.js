@@ -23,7 +23,6 @@ const Navbar = () => {
     setOpen(true);
   };
 
- 
   const onClose = () => {
     setOpen(false);
   };
@@ -34,8 +33,8 @@ const Navbar = () => {
          <div className='logo_img'>
         <img src={Logo} alt="Logo" style={{ width: '120px' }} />
         </div>
-        <div className='nav_items'>
-        <Menu onClick={handleClick} selectedKeys={[current]} mode="horizontal" style={{ display: 'flex', justifyContent: 'flex-end',width:'100%' }}>
+        <div className='nav_items' style={{overflow:'hidden'}}>
+        <Menu onClick={handleClick} selectedKeys={[current]} mode="horizontal" style={{ display: 'flex', justifyContent: 'flex-end',width:'100%',overflow:'hidden' }}>
           <Menu.Item key="home">
             HOME
           </Menu.Item>
@@ -55,20 +54,25 @@ const Navbar = () => {
         </button>
       </div>
       <Drawer
-        title="Drawer with extra actions"
+        title=""
         placement='right'
-        width={500}
+        width={200}
         onClose={onClose}
         open={open}
       >
         <Menu onClick={handleClick} selectedKeys={[current]} mode="vertical"    >
-          <Menu.Item key="mail" icon={<MailOutlined />}>
-            Navigation One
+        <Menu.Item key="home">
+            HOME
           </Menu.Item>
-          <Menu.Item key="app" icon={<AppstoreOutlined />}>
-            Navigation Two
+          <Menu.Item key="aboutus" >
+            ABOUT US
           </Menu.Item>
-        
+          <Menu.Item key="services" >
+            SERVICES
+          </Menu.Item>
+          <Menu.Item key="contactus" >
+            CONTACT US
+          </Menu.Item>
         </Menu>
       </Drawer>
     </div>
