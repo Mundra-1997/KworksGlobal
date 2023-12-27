@@ -9,17 +9,21 @@
     /* flex-wrap: wrap; */
 }
 .boxesss{
+    width: 80vw;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 .service-title{
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 .service-img{
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
+    padding: 0.5rem;
 }
 .service-paper{
     display: flex;
@@ -28,7 +32,7 @@
     flex-direction: column;
     align-items: center;
     margin: 5%;
-    width: 300px; /* Set a fixed width */
+    width: 15rem; /* Set a fixed width */
     height: 250px; 
 }
 .service-paper:hover{

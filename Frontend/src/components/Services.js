@@ -7,6 +7,12 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import advisory from '../image/financial.png'
 import tax from '../image/Cfo.png'
+import f1 from '../../src/image/one.png'
+import f2 from '../../src/image/two.png'
+import f3 from '../../src/image/thri.png'
+import f4 from '../../src/image/fur.png'
+import f5 from '../../src/image/fv.png'
+import f6 from '../../src/image/sx.png'
 const data = [
   {
     title: "Finance As Service",
@@ -40,20 +46,52 @@ const Services = () => {
       <h1 className='service-title'>Our Services</h1>
       <div className='boxesss' >
       <Paper elevation={5} className='service-paper' onClick={()=>navigate('services/finance')}>
-        <div><img className='service-img' src={data[0].image} alt='pics'></img></div>
-        <p className='service-heading'>Finance As A Services<span style={{ display: 'block',
+        <div><img className='service-img' src={f1} alt='pics'></img></div>
+        <p className='service-heading'>Book Keeping<span style={{ display: 'block',
     width: '50%',
     marginTop:'0.5rem',
     height: '0.3rem',
     backgroundColor: '#134d65'}}></span></p>
       </Paper>
       <Paper elevation={5} className='service-paper' onClick={()=>navigate('services/cfo')}>
-        <div><img className='service-img'src={data[1].image} alt='pics'></img></div>
-        <p className='service-heading'>Fractional CFO Services<span style={{ display: 'block',
+        <div><img className='service-img'src={f2} alt='pics'></img></div>
+        <p className='service-heading'>Compliance<span style={{ display: 'block',
     width: '50%',
     marginTop:'0.5rem',
     height: '0.3rem',
     backgroundColor: '#fec010'}}></span></p>
+      </Paper>
+      <Paper elevation={5} className='service-paper' onClick={()=>navigate('services/finance')}>
+        <div><img className='service-img' src={f3} alt='pics'></img></div>
+        <p className='service-heading'>Payroll<span style={{ display: 'block',
+    width: '50%',
+    marginTop:'0.5rem',
+    height: '0.3rem',
+    backgroundColor: '#134d65'}}></span></p>
+      </Paper>
+      <Paper elevation={5} className='service-paper' onClick={()=>navigate('services/finance')}>
+        <div><img className='service-img' src={f4} alt='pics'></img></div>
+        <p className='service-heading'>AP<span style={{ display: 'block',
+    width: '50%',
+    marginTop:'0.5rem',
+    height: '0.3rem',
+    backgroundColor: '#134d65'}}></span></p>
+      </Paper>
+      <Paper elevation={5} className='service-paper' onClick={()=>navigate('services/finance')}>
+        <div><img className='service-img' src={f5} alt='pics'></img></div>
+        <p className='service-heading'>Invoicing and AR<span style={{ display: 'block',
+    width: '50%',
+    marginTop:'0.5rem',
+    height: '0.3rem',
+    backgroundColor: '#134d65'}}></span></p>
+      </Paper>
+      <Paper elevation={5} className='service-paper' onClick={()=>navigate('services/finance')}>
+        <div><img className='service-img' src={f6} alt='pics'></img></div>
+        <p className='service-heading'>Equity Management<span style={{ display: 'block',
+    width: '50%',
+    marginTop:'0.5rem',
+    height: '0.3rem',
+    backgroundColor: '#134d65'}}></span></p>
       </Paper>
       </div>
     </div>
