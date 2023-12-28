@@ -4,33 +4,47 @@
   
   margin-top: 0rem;
   width: 100vw;
+  height: 100vh;
 }
 .banner-div{
-    background-image: url('../image/Boston\ Skyline-03.png');
+    /* background-image: url('../image/Boston\ Skyline-03.png'); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     opacity: 0.9;
-    background-size: cover;
-    background-position: 10% 5%; 
-
-   
+    
+    color: '#565f66';
+    text-shadow: black;
+    background-color: #e6edf0c2;
 }
-
+.img-div{
+  width: 20%;
+  height: 20%;
+}
 .banner-heading{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   padding: 1rem;
-    color: '#565f66';
-    text-shadow: black;
-    background-color: #e6edf0c2;
+  
     width: 50vw;
     height: 100%;
+
+    ; /* Adjust height as needed */
+ 
+}
+
+.banner-heading h1{
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
 }
 .banner-heading p{
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: left;
+  width: 45vw;
 }
 .banner-div p span{
   font-weight: bold;

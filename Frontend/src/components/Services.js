@@ -43,7 +43,10 @@ const Services = () => {
  const navigate = useNavigate()
   return (
     <div className='service-container'>
-      <h1 className='service-title'>Our Services</h1>
+      <p className='service-title'>Level up your finance game. Unplug from fixed costs, plug into on-demand financial services.<br/> <span style={{fontSize:'1rem'}}><b> Re-imagined! Finance As A Service</b> Pay only for customized, timely solutions you need.</span></p>
+     
+      <p className='service-sub-title'>FinTeam: Your on-demand finance department. From bookkeeping to strategic planning, M&A, and more, our certified team manages it all. Free yourself to prioritize business growth</p>
+      <p className='service-title'>Tired of a bloated finance department draining your resources? Say goodbye to manual processes, siloed data, and hidden costs.</p>
       <div className='boxesss' >
       <Paper elevation={5} className='service-paper' onClick={()=>navigate('services/finance')}>
         <div><img className='service-img' src={f1} alt='pics'></img></div>

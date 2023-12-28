@@ -18,7 +18,14 @@
     gap: 1rem;
 }
 .service-title{
-    font-size: 2.5rem;
+    font-size: 2rem;
+    width: 100%;
+    padding: 1rem;
+}
+.service-sub-title{
+    font-size: 1rem;
+    width: 100%;
+    padding: 1rem;
 }
 .service-img{
     width: 80%;
