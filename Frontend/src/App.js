@@ -2,12 +2,10 @@ import './App.css';
 import AboutUs from './components/AboutUs';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
-import Pricing from './components/Pricing';
-import Contact from './components/ContactUs';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import FinanceAsService from './components/FinanceAsService';
-import CfoServices from './components/CfoServices';
 
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+// import ContactModal from './components/ContactModal';
 function App() {
   return (
     <div className='App'>
@@ -18,11 +16,9 @@ function App() {
           <Routes>
             <Route path='/about-us' element={<AboutUs />} />
             <Route path='/' element={<Home />} />
-            <Route path='/pricing' element={<Pricing />} />
-            <Route path='/contact' element={<Contact />} />
-            <Route path='/services/finance' element={<FinanceAsService/>} />
-            <Route path='/services/cfo' element={<CfoServices/>}/>
+            
           </Routes>
+        
         </Router>
       </div>
     </div>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Menu, Drawer, Button } from 'antd';
+import w from '../image/wording.png'
 import './Navbar.css'
 import {
   MailOutlined,
@@ -7,7 +8,7 @@ import {
   SettingOutlined,
   MenuOutlined,
 } from '@ant-design/icons';
-import Logo from '../image/kbif.png'
+import Logo from '../image/final.png'
 const { SubMenu } = Menu;
 
 const Navbar = () => {
@@ -31,7 +32,9 @@ const Navbar = () => {
     
       <div className="nav"  >
          <div className='logo_img'>
-        <img src={Logo} alt="Logo" style={{ width: '120px' }} />
+          <img src={w} alt='w' style={{    height: '4rem' ,width: '5rem' }}></img>
+          <img src={Logo} alt="Logo" style={{ width: '120px',marginBottom:'1rem' }} />
+        
         </div>
         <div className='nav_items' style={{overflow:'hidden'}}>
         <Menu onClick={handleClick} selectedKeys={[current]} mode="horizontal" style={{ display: 'flex', justifyContent: 'flex-end',width:'100%',overflow:'hidden' }}>

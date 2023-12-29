@@ -1,7 +1,7 @@
 .service-container{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     margin-top: 1%;
     margin-bottom: 1%;
@@ -9,28 +9,43 @@
     /* flex-wrap: wrap; */
 }
 .boxesss{
-    width: 80vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-.service-title{
-    font-size: 2rem;
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    grid-row-gap: 30px;
+    margin-left: 0rem;
     padding: 1rem;
 }
+.service-title{
+    font-size: 3rem;
+    width: 100%;
+    font-size: 800;
+    padding: 1rem;
+}
+.logo-des{
+    background-color: #134d65;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 50vh;
+}
+.logo-des-p{
+    color: white;
+    font-size: 2rem;
+    margin-bottom:1rem ;
+}
+
 .service-sub-title{
     font-size: 1rem;
     width: 100%;
     padding: 1rem;
 }
 .service-img{
-    width: 80%;
-    height: 80%;
-    padding: 0.5rem;
+    width: 100%;
+    height: 100%;
+ 
 }
 .service-paper{
     display: flex;
@@ -57,10 +72,10 @@
     height: 50%;
 }
 .service-heading{
-   
+    width: 80%;
     font-size:1.2rem;
     text-align: center;
-    text-wrap: nowrap;
+    text-wrap: wrap;
     font-weight: 400;
     /* margin-right: 50%; */
 }
@@ -79,7 +94,7 @@
         align-items: center;
     }
     .service-title{
-        font-size: 2rem;
+        font-size: 3rem;
     }
     .service-paper{
         width: 50%;
