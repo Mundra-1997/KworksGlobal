@@ -19,6 +19,7 @@
     padding: 1rem;
 }
 .service-title{
+    margin-top: 3rem;
     font-size: 3rem;
     width: 100%;
     font-size: 800;
@@ -30,6 +31,8 @@
    justify-content: center;
    align-items: center;
    height: 50vh;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 .logo-des-p{
     color: white;

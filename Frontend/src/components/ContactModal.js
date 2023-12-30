@@ -39,11 +39,56 @@ const ContactModal = ({ isOpen, closeModal }) => {
       style={customStyles} // Apply custom styles to the modal
     >
      <div style={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
-      <div style={{display:'flex',justifyContent:'space-around',alignItems:'center'}}><h2>Contact Us</h2><button style={{margin:'0rem',width:'3rem'}} onClick={closeModal}>close</button></div>
+      <div style={{display:'flex',justifyContent:'space-around',alignItems:'center',width:'100%'}}><h2>Contact Us</h2><button style={{margin:'0rem',width:'3rem'}} onClick={closeModal}>close</button></div>
       <div>
-        <form>
-           
-        </form>
+      <form style={{margin:0}}>
+            <div className='inputField'>
+              <label>Name</label>
+              <input
+                type="text"
+                name="name"
+               
+                required
+                placeholder='Enter Your Name'
+              />
+            </div>
+            <div className='inputField'>
+              <label>Email</label>
+              <input
+                type="email"
+                name="email"
+                
+                required
+                placeholder='abc@xyz.com'
+              />
+            </div>
+            <div className='inputField'>
+              <label>Phone Number</label>
+              <input
+                type="tel"
+                name="number"
+              
+                required placeholder='98XXXXX394' />
+            </div>
+            <div className='textArea'>
+              <label>Message</label>
+              <textarea
+                name="message"
+               
+                required placeholder='Tell us about your query...' />
+            </div>
+            < button
+              className='contactBtn'
+              type='submit'
+              variant="contained"
+              sx={{ marginLeft: '17%',marginTop:'20px', backgroundColor: '#1eade4',
+              '@media (max-width: 600px)': {
+              marginLeft: '0%',}
+              }}
+            >
+              <span >Send</span>
+            </button>
+          </form>
       </div>
      </div>
     </Modal>
