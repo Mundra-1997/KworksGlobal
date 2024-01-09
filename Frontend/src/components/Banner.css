@@ -18,6 +18,7 @@
     color: '#565f66';
     text-shadow: black;
     background-color: #e6edf0c2;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }
 .img-div{
   width: 30%;

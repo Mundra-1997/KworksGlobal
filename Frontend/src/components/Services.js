@@ -1,6 +1,9 @@
 import React from 'react';
+import {useState} from 'react';
 import Paper from '@mui/material/Paper';
 import 'animate.css';
+import ReactCardFlip from "react-card-flip";
+import Question from './Question';
 import './Service.css'
 import {useNavigate} from 'react-router-dom'
 import 'slick-carousel/slick/slick.css';
@@ -42,7 +45,7 @@ const data = [
 ];
 
 const Services = () => {
-   
+  const [flip, setFlip] = useState(false);
  const navigate = useNavigate()
   return (
     <div className='service-container'>
@@ -56,8 +59,13 @@ const Services = () => {
       <p className='logo-des-p'>Tired of a bloated finance department draining your resources? Say goodbye to manual processes, siloed data, and hidden costs.</p>
       </div>
       </div>
+      
+      <Question/>
+   
       <div className='boxesss' >
-      <Paper elevation={5} className='service-paper' onClick={()=>navigate('services/finance')}>
+      <ReactCardFlip isFlipped={flip}
+            flipDirection="vertical">
+      <Paper elevation={5} className='service-paper'  onMouseEnter={() => setFlip(!flip)}>
         <div><img className='service-img' src={f1} alt='pics'></img></div>
         <p className='service-heading'>Book Keeping & Accounting<span style={{ display: 'block',
     width: '50%',
@@ -65,6 +73,12 @@ const Services = () => {
     height: '0.3rem',
     backgroundColor: '#134d65'}}></span></p>
       </Paper>
+      <Paper elevation={5} className='service-paper' onMouseLeave={() => setFlip(!flip)}>
+       <p>
+       Stay Organized with accurate and up-to-date financial records. Expertise to perform month end close efficiently and accurately.
+       </p>
+      </Paper>
+      </ReactCardFlip>
       <Paper elevation={5} className='service-paper' onClick={()=>navigate('services/cfo')}>
         <div><img className='service-img'src={f2} alt='pics'></img></div>
         <p className='service-heading'>CFO Consulting Services<span style={{ display: 'block',

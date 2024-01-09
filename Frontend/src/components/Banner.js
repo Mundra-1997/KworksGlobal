@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ContactModal from './ContactModal';
+// import ContactModal from './ContactModal';
 import './Banner.css'
 import 'animate.css';
 import kco from '../image/headline.svg'
@@ -23,7 +23,7 @@ const Banner = () => {
           <button onClick={openModal}>Contact Us</button>
 </div>
 <div className='img-div'><img src={kco} alt='scg'></img></div>
-<ContactModal isOpen={isOpen} closeModal={closeModal} />
+
 </div>
 
       

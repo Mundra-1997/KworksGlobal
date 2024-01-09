@@ -57,15 +57,10 @@
     flex-direction: column;
     align-items: center;
     margin: 5%;
-    width: 15rem; /* Set a fixed width */
+  
     height: 250px; 
 }
-.service-paper:hover{
-    animation: pulse; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 4s;
-    color:#3f4a4f;
-    background-color: #c8d1da;
-}
+
 .service-paper div{
     display: flex;
     padding: 0.5rem;
