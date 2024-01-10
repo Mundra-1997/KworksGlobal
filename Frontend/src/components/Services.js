@@ -46,6 +46,7 @@ const data = [
 
 const Services = () => {
   const [flip, setFlip] = useState(false);
+  const [flip1, setFlip1] = useState(false);
  const navigate = useNavigate()
   return (
     <div className='service-container'>
@@ -73,13 +74,15 @@ const Services = () => {
     height: '0.3rem',
     backgroundColor: '#134d65'}}></span></p>
       </Paper>
-      <Paper elevation={5} className='service-paper' onMouseLeave={() => setFlip(!flip)}>
+      <Paper elevation={5} className='back-side' onMouseLeave={() => setFlip(!flip)}>
        <p>
        Stay Organized with accurate and up-to-date financial records. Expertise to perform month end close efficiently and accurately.
        </p>
       </Paper>
       </ReactCardFlip>
-      <Paper elevation={5} className='service-paper' onClick={()=>navigate('services/cfo')}>
+      <ReactCardFlip isFlipped={flip1}
+            flipDirection="vertical">
+      <Paper elevation={5} className='service-paper' onMouseEnter={() => setFlip1(!flip1)}>
         <div><img className='service-img'src={f2} alt='pics'></img></div>
         <p className='service-heading'>CFO Consulting Services<span style={{ display: 'block',
     width: '50%',
@@ -87,6 +90,12 @@ const Services = () => {
     height: '0.3rem',
     backgroundColor: '#134d65'}}></span></p>
       </Paper>
+      <Paper elevation={5} className='back-side' onMouseLeave={() => setFlip1(!flip1)}>
+       <p>
+       Level up your finances with a part-time CFO. Gain expert guidance during key growth stages without full-time costs
+       </p>
+      </Paper>
+      </ReactCardFlip>
       <Paper elevation={5} className='service-paper' onClick={()=>navigate('services/finance')}>
         <div><img className='service-img' src={f3} alt='pics'></img></div>
         <p className='service-heading'>Financial Analysis<span style={{ display: 'block',
