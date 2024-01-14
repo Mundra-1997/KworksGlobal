@@ -10,7 +10,7 @@
 }
 .boxesss{
     width: 100vw;
-    height: 100vh;
+    
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 5px;
@@ -20,17 +20,24 @@
 }
 .service-title{
     margin-top: 3rem;
-    font-size: 3rem;
+    font-size: 2rem;
     width: 100%;
     font-size: 800;
     padding: 1rem;
+}
+.service-title span{
+    font-size: 1rem;
+}
+.faas{
+    font-size: 2rem;
+    font-weight: 500;
 }
 .logo-des{
     background-color: #134d65;
    display: flex;
    justify-content: center;
    align-items: center;
-   height: 50vh;
+   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
     margin-top: 5rem;
     margin-bottom: 5rem;
 }
@@ -38,6 +45,11 @@
     color: white;
     font-size: 2rem;
     margin-bottom:1rem ;
+}
+.logo-des-a{
+    color: #134d65;
+    font-size: 2.5rem;
+    margin-bottom:1rem ;  
 }
 
 .service-sub-title{
@@ -52,7 +64,7 @@
 }
 .service-paper{
     display: flex;
-   
+   width: 75%;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -84,19 +96,18 @@
     flex-direction: column;
     align-items: center;
     margin: 5%;
-  
+    width: 75%;
     height: 250px; 
 }
 .back-side p{
    width: 80%;
-   line-height: 2rem;
+   line-height: 5px;
+   line-height: 1rem;
 }
 
 @media (max-width:767px){
     .boxesss{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        grid-template-columns: repeat(1, 1fr); 
     }
     .service-container {
         display: flex;
@@ -104,18 +115,32 @@
         justify-content: center;
         align-items: center;
     }
+    .back-side{
+       
+    }
     .service-title{
-        font-size: 3rem;
+        font-size: 1.5rem;
+    }
+    .service-title span{
+        font-size: 1.5rem;
     }
     .service-paper{
-        width: 50%;
+        width: 100%;
         height: auto;
         padding: 1rem;
+        margin: 0;
     }
     .service-heading{
         font-size: 1rem;
     }
-    
+    .logo-des{
+        margin-top: 0;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .logo-des-p{
+        font-size: 1rem;
+    }
 
 }
 

@@ -6,7 +6,7 @@ const Question = () => {
     <div className='question'>
       <div className='questions'> <div className='divq div1'><span>Are you tired of struggling to find skilled finance professionals?</span></div>
       <div className='divq div2'><span>Is your in-house team drowning in tasks and lacking strategic foresight?</span></div></div>
-       <div className='imgdiv'><img src={f9} alt='qs'></img>
+       <div className='imgdiv'><span>See How we can help!</span>
       </div>
       <div className='questions'>
      

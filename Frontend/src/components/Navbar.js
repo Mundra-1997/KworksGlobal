@@ -30,7 +30,7 @@ const Navbar = () => {
     setOpen(false);
   };
   return (
-    <div>
+    <div className='main-nav'>
     
       <div className="nav"  >
          <div className='logo_img'>

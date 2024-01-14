@@ -14,6 +14,7 @@ import AnimationIcon from '@mui/icons-material/Animation';
 import BusinessIcon from '@mui/icons-material/Business'; // Assuming an icon for Ownership Mindset
 import AboutImg from '../image/fhwhhw.jpg';
 import { ListItemIcon } from '@mui/material';
+import Values from './Values';
 import priya from '../image/Picture1.jpg'
 const AboutUs = () => {
   const keyFeatures = [
@@ -36,11 +37,10 @@ const AboutUs = () => {
       <div  className='sub-container-2'>
         <Paper elevation={3} style={{ padding: '20px', height: '100%' }}>
           <h1 className='heading' style={{overflow:'hidden'}}  gutterBottom>
-            We Work the Numbers! <br/>
-            So you can Work Wonders!
+           We are your dedicated Finance Team !
           </h1>
           <p className='para'>
-            Founded in September 2023, K Works Global Solutions' vision is to transform the financial landscape for businesses of all sizes and bring the future of managed financial services to small to medium-sized companies.
+            Founded in September 2023, FinTeam's vision is to transform the financial landscape for businesses of all sizes and bring the future of managed financial services to small to medium-sized companies.
             Our mission is to empower businesses with the appropriate financial tools and expertise needed so they can perform wonders. We believe that by simplifying financial management, we enable our clients to focus on what they do best while we handle the numbers. Together, we're shaping a future where financial success is within reach for every business.
           </p>
           
@@ -62,14 +62,17 @@ const AboutUs = () => {
   </div>
 
   </div>
+  {/* <Values/> */}
   <div className='container-3'>
      <h2 className='key-features'> From Founder's Pen</h2>
      <div className='container-3-sub'>
       <div className='container-3-sub-div1'><img src={priya} alt='priya pic'/></div>
       <div className='container-3-sub-div2'><Paper elevation={3}><p>
-      Founder - Priya Chanduraj, over two decade of being a seasoned leader with a background in finance and business transformation, harnesses her extensive experience as a CFO, along with her adept use of cutting-edge technology and analytical capabilities. Her primary objective is to guarantee that her clients' financial strategies are not just aligned but intricately woven into the fabric of their overarching business objectives. She expertly blends her technical prowess with a deep understanding of business dynamics, resulting in the creation of pioneering solutions tailored to precisely meet her clients' unique accounting and finance requirements.
-Priya possesses a multifaceted skill set that encompasses a wide range of competencies, including executing M&A transactions, implementing and optimizing systems, assessing workflow and enhancing processes, conducting financial reporting and in-depth analysis, crafting and managing budgets, skillfully overseeing cash flows, accurate forecasting, establishing and assessing internal controls. 
-Priya's role as Chief Financial Officer at BlueWave Energy, a prominent renewable energy company, involved her in the comprehensive management of the organization's financial operations. She brings a wealth of experience from her tenure with Fortune 500 companies, with a primary focus on the energy sector. Priya has held senior financial leadership positions at industry giants such as Schneider Electric, the World Bank's International Finance Corporation (IFC), and the AES Corporation. Additionally, she is an active participant in nonprofit boards, serving as an advisory member for the Greater Boston Salvation Army and contributing her financial expertise to the Finance Executive International Boston Chapter.
+      Priya Chanduraj is a seasoned finance and business transformation leader with over 20 years of experience. She excels at aligning financial strategies with overall business goals, utilizing her technical expertise and deep business understanding to craft tailored solutions for clients' unique accounting and finance needs. Her multi-faceted skills include M&A execution, systems optimization, process improvement, financial reporting, budgeting, cash flow management, forecasting, and internal controls.
+
+Previously, Priya served as CFO at BlueWave Energy, managing their financial operations. Her prior experience includes senior finance roles at Fortune 500 companies like Schneider Electric and AES,
+ as well as the World Bank's IFC. Notably, Priya actively contributes her financial expertise to non-profit boards, including the Greater Boston Salvation Army and the Finance Executive International Boston Chapter.
+ Driven by a mission to fuel small business success, she leverages technology and talent management to solve their financial needs.
         </p></Paper></div>
      </div>
   </div>
