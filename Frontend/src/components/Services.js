@@ -8,6 +8,7 @@ import './Service.css'
 import {useNavigate} from 'react-router-dom'
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import AboutImg from '../image/cool.png';
 import advisory from '../image/financial.png'
 import tax from '../image/Cfo.png'
 import f1 from '../../src/image/bookeeping.svg'
@@ -82,7 +83,7 @@ const Services = () => {
       </Paper>
       <Paper elevation={5} className='back-side' onClick={() => setFlip(!flip)}>
        <p>
-       Stay Organized with accurate and up-to-date financial records. Expertise to perform month end close efficiently and accurately.
+       Chaos got you in a chokehold?<br/> Breathe easy with organized finances! We tame tangled records & conquer month-end close with flawless accuracy. Stay informed, stay ahead.
        </p>
       </Paper>
       </ReactCardFlip>
@@ -98,7 +99,7 @@ const Services = () => {
       </Paper>
       <Paper elevation={5} className='back-side' onClick={() => setFlip1(!flip1)}>
        <p>
-       Level up your finances with a part-time CFO. Gain expert guidance during key growth stages without full-time costs. Focus on your startup's core while we unlock financial clarity and build investor confidence. CFO services is your bridge to the big leagues to attract investors, build confidence, and scale smarter.
+       Skip full-time CFO costs, unlock expert growth guidance. Level up your finances with our part-time CFOs. Get clarity, build investor confidence, and scale smarter. Bridge to the big leagues starts here.
        </p>
       </Paper>
       </ReactCardFlip>
@@ -113,7 +114,7 @@ const Services = () => {
       </Paper>
       <Paper elevation={5} className='back-side' onClick={() => setFlip2(!flip2)}>
        <p>
-       Gain insights into your financial health and make data driven decisions. We're your financial compass, guiding you with expert analysis and actionable insights. 
+       Lost in financial fog?<br/> Stop guessing, start knowing. We analyze your numbers, reveal insights, and guide you to goals. Expert analysis, actionable steps - your financial compass to navigate with confidence.
        </p>
       </Paper>
 
@@ -130,7 +131,7 @@ const Services = () => {
       </Paper>
       <Paper elevation={5} className='back-side' onClick={() => setFlip3(!flip3)}>
        <p>
-       All compliance and tax deadlines and deliverables are On time. No more tracking or worrying as we have you covered. Our tax and compliance experts navigate the ever-changing landscape, ensuring you stay squeaky clean with the authorities. 
+       Tax season stress-free? <br/>We got this. Deadlines met, deductions maxed, sleep tight. Our experts navigate the chaos, keeping you squeaky clean with the IRS. Relax, your finances are in good hands.
        </p>
       </Paper>
       </ReactCardFlip>
@@ -145,7 +146,7 @@ const Services = () => {
       </Paper>
       <Paper elevation={5} className='back-side' onClick={() => setFlip4(!flip4)}>
        <p>
-       Close deals faster and maximize value with our expert accounting and strategic advisory services. Mergers and acquisitions are complex journeys, filled with intricate calculations, hidden risks, and critical decisions. 
+       M&A maze got you lost?<br/> Uncover hidden value & close deals faster with our accounting navigators. Expert due diligence, financial forecasting, tax optimization—chart your course to merger & acquisition success.
        </p>
       </Paper>
       </ReactCardFlip>
@@ -160,7 +161,7 @@ const Services = () => {
       </Paper>
       <Paper elevation={5} className='back-side' onClick={() => setFlip5(!flip5)}>
        <p>
-       Automate tasks, gain clear-as-crystal insights, and watch your finances blossom. We partner with leading technologies to liberate your agility, cutting out endless demos and guesswork.
+       Dust off spreadsheets, unleash growth. AI scans your finances, finds hidden inefficiencies. Automate tasks, gain crystal insights, watch profits bloom. We partner with top tech, cutting endless demos. Tailor your system, dominate your industry. Lead the finance revolution supporting Future of Finance
        </p>
       </Paper>
       </ReactCardFlip>
@@ -175,7 +176,7 @@ const Services = () => {
       </Paper>
       <Paper elevation={5} className='back-side' onClick={() => setFlip6(!flip6)}>
        <p>
-       At Finteam we handle everything from timesheets to taxes, so you can focus on what matters. Leave payroll complexities behind
+       Ditch the timesheet headaches and tax woes! Our smooth payroll system handles everything - from new hires to paychecks. Work smarter, not harder on paydays. Relax, hand off payroll to the pros, and watch your business fly.
        </p>
       </Paper>
       </ReactCardFlip>
@@ -190,10 +191,19 @@ const Services = () => {
       </Paper>
       <Paper elevation={5} className='back-side' onClick={() => setFlip7(!flip7)}>
        <p>
-       Empower your investment journey with confidence. Our comprehensive accounting and equity services equip you with the tools and insights to make informed decisions, maximize returns, and achieve your financial goals. 
+       Invest boldly, not blindly.  Our accounting & equity experts empower you with clarity, insights, and guidance to unlock maximum returns and conquer your financial goals. From bookkeeping brilliance to expert market navigation, we're your trusted co-pilot on the journey to investment mastery.
        </p>
       </Paper>
       </ReactCardFlip>
+      </div>
+      <div className='conclusion'>
+        <div className='img-div1'>  <img src={AboutImg} alt="About Us"  /></div>
+           <div className='conclusion-text'>
+            <p>With FinTeam your dedicated accounting and Finance team in-charge, you're libertated.....
+          <span>   
+  <br/>to channel your energy where it counts most ,nurturing the growth of your business. We're not just a service; we're your strategic ally in unlocking your business's full potential.</span> 
+</p>  <div className='conclusion-btn'>Talk to us</div></div> 
+   
       </div>
     </div>
   )

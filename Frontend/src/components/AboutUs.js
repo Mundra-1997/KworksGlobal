@@ -12,7 +12,7 @@ import SupportIcon from '@mui/icons-material/Support';
 import SpeedIcon from '@mui/icons-material/Speed';
 import AnimationIcon from '@mui/icons-material/Animation';
 import BusinessIcon from '@mui/icons-material/Business'; // Assuming an icon for Ownership Mindset
-import AboutImg from '../image/fhwhhw.jpg';
+import AboutImg from '../image/cool.png';
 import { ListItemIcon } from '@mui/material';
 import Values from './Values';
 import priya from '../image/Picture1.jpg'
@@ -35,7 +35,7 @@ const AboutUs = () => {
       </div>
       {/* Text content on the right */}
       <div  className='sub-container-2'>
-        <Paper elevation={3} style={{ padding: '20px', height: '100%' }}>
+        <div elevation={3} style={{ padding: '20px', height: '100%' }}>
           <h1 className='heading' style={{overflow:'hidden'}}  gutterBottom>
            We are your dedicated Finance Team !
           </h1>
@@ -44,7 +44,7 @@ const AboutUs = () => {
             Our mission is to empower businesses with the appropriate financial tools and expertise needed so they can perform wonders. We believe that by simplifying financial management, we enable our clients to focus on what they do best while we handle the numbers. Together, we're shaping a future where financial success is within reach for every business.
           </p>
           
-        </Paper>
+        </div>
       </div>
       
     </div>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Menu, Drawer, Button } from 'antd';
 import { useNavigate } from "react-router-dom";
+
 import w from '../image/wording.png'
 import './Navbar.css'
 import {
@@ -49,7 +50,7 @@ const Navbar = () => {
           <Menu.Item key="services" >
             SERVICES
           </Menu.Item>
-          <Menu.Item key="contactus" >
+          <Menu.Item key="contactus"  onClick={()=>navigate('/contact-us')} >
             CONTACT US
           </Menu.Item>
         </Menu>
@@ -75,7 +76,7 @@ const Navbar = () => {
           <Menu.Item key="services" >
             SERVICES
           </Menu.Item>
-          <Menu.Item key="contactus" >
+          <Menu.Item key="contactus" onClick={()=>navigate('/contact-us')} >
             CONTACT US
           </Menu.Item>
         </Menu>

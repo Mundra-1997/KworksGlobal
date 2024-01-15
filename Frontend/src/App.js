@@ -2,7 +2,7 @@ import './App.css';
 import AboutUs from './components/AboutUs';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
-
+import ContactUs from './components/ContactUs'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // import ContactModal from './components/ContactModal';
@@ -16,7 +16,7 @@ function App() {
           <Routes>
             <Route path='/about-us' element={<AboutUs />} />
             <Route path='/' element={<Home />} />
-            
+             <Route path='/contact-us' element={<ContactUs/>}/>
           </Routes>
         
         </Router>

@@ -58,8 +58,11 @@
   font-weight: bold;
   border-radius: 5rem;
 }
+.banner-heading button:hover{
+  background-color: #134d65;
+}
 .banner-subheading{
-    background-color: #fec010;
+    
     color: #134d65;
     text-align: center;
     font-size: 2rem;
