@@ -47,8 +47,8 @@ const Navbar = () => {
           <Menu.Item key="aboutus" onClick={()=>navigate('/about-us')}  >
             ABOUT US
           </Menu.Item>
-          <Menu.Item key="services" >
-          <Link to="servicesSection" smooth={true} duration={500}>SERVICES</Link>
+          <Menu.Item key="services"  onClick={()=>navigate('/services')}>
+        SERVICES
           </Menu.Item>
           <Menu.Item key="contactus"  onClick={()=>navigate('/contact-us')} >
             CONTACT US

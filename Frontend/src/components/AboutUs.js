@@ -27,7 +27,7 @@ const AboutUs = () => {
   ];
 
   return (
-    <div style={{width:'88.2%',margin:'auto'}}>
+    <>
     <div className='container'>
       {/* Image on the left */}
       
@@ -78,7 +78,7 @@ Previously, Priya served as CFO at BlueWave Energy, managing their financial ope
         </p></Paper></div>
      </div>
   </div>
-  </div>
+  </>
   );
 };
 
