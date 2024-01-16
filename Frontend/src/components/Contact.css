@@ -1,9 +1,11 @@
 .wrapper{
-    margin-top: 5rem;
+   
     display: flex;
     justify-content: space-around;
     align-items: center;
     gap: 32px;
+    width: 88.2%;
+    margin: 5rem auto 2rem auto;
 }
 .div1{
   display: flex;

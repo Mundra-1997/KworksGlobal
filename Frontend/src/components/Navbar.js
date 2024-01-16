@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Menu, Drawer, Button } from 'antd';
 import { useNavigate } from "react-router-dom";
-
+import { Link } from 'react-scroll';
 import w from '../image/wording.png'
 import './Navbar.css'
 import {
@@ -48,7 +48,7 @@ const Navbar = () => {
             ABOUT US
           </Menu.Item>
           <Menu.Item key="services" >
-            SERVICES
+          <Link to="servicesSection" smooth={true} duration={500}>SERVICES</Link>
           </Menu.Item>
           <Menu.Item key="contactus"  onClick={()=>navigate('/contact-us')} >
             CONTACT US

@@ -9,14 +9,17 @@
 .imgdiv{
     background-color: #134d65;
     cursor: pointer;
-    border-radius: 50%;
-    width: 15%;
-    height: 200px;
+    border-radius: 2rem;
+    
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
     >span{
         color: white;
+       font-weight: 600;
+       font-size: 1.5rem;
+       text-wrap: nowrap;
     }
   
 }
@@ -42,3 +45,10 @@
 margin-bottom: 0;
 font-size: 1.1rem;
 }
+ @media(max-width:767px){
+    .imgdiv{
+        >span{
+            font-size: 1rem;
+        }
+    }
+ }

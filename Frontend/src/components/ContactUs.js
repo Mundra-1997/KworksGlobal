@@ -8,6 +8,7 @@ const ContactUs = () => {
         {/* <div className='icon'><img src={co}></img></div> */}
         <h1 className='hero-head'>Book a Free Consultation</h1>
         <p className='hero-para'>Talk to us to see what running a business is like with FinTeam<br/> on your side.</p>
+        <p>Drop us email at :<b> pchanduraj@finteam.one</b></p>
       </div>
       <div className='div2'>
         <div className='book'>

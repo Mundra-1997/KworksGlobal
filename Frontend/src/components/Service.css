@@ -5,14 +5,14 @@
     align-items: center;
     margin-top: 1%;
     margin-bottom: 1%;
-    width: 100vw;
+    width: 100%;
     /* flex-wrap: wrap; */
 }
 .boxesss{
-    width: 100vw;
+    width: 100%;
     
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 5px;
     grid-row-gap: 30px;
     margin-left: 0rem;
@@ -23,7 +23,7 @@
     font-size: 2rem;
     width: 100%;
     font-size: 800;
-    padding: 1rem;
+    
 }
 .service-title span{
     font-size: 1rem;
@@ -72,7 +72,14 @@
     cursor: pointer;
     height: 250px; 
 }
-
+.react-card-front{
+    display: flex;
+    justify-content: center;
+}
+.react-card-back{
+    display: flex;
+    justify-content: center;
+}
 .service-paper div{
     display: flex;
     padding: 0.5rem;
@@ -105,6 +112,7 @@
    line-height: 1rem;
 }
 .conclusion{
+    width: 100%;
     background-color: #e6edf0c2;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     color: white;
@@ -118,7 +126,7 @@
     gap: 2rem;
 }
 .conclusion-text{
-    width: 75%;
+    
     display: flex;
     flex-direction: column;
     justify-content:center ;
@@ -140,6 +148,7 @@
     border-radius: 5rem;
     font-size: 1.5rem;
     padding: 1rem;
+    cursor: pointer;
 }
 
 @media (max-width:767px){
@@ -152,9 +161,7 @@
         justify-content: center;
         align-items: center;
     }
-    .back-side{
-       
-    }
+  
     .service-title{
         font-size: 1.5rem;
     }
@@ -162,11 +169,14 @@
         font-size: 1.5rem;
     }
     .service-paper{
-        width: 100%;
+        
         height: auto;
         padding: 1rem;
         margin: 0;
     }
+    .back-side{
+       
+     }
     .service-heading{
         font-size: 1rem;
     }
@@ -174,10 +184,15 @@
         margin-top: 0;
         flex-direction: column;
         padding: 1rem;
+        clip-path: none;
     }
     .logo-des-p{
         font-size: 1rem;
+        text-align: center;
     }
+    .logo-des-a{
+        font-size:1.5rem;
+    padding: 1rem;     }
 
 }
 

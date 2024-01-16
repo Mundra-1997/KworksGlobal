@@ -13,25 +13,28 @@ const Question = () => {
               
             >
 
-<div className='divq div1'><span>Are you tired of struggling to find skilled finance professionals?</span></div>
+<div className='divq divsec1'><span>Are you tired of struggling to find skilled finance professionals?</span></div>
             </AnimatedOnScroll>
           
             <AnimatedOnScroll
                 animationIn="bounceInLeft"
               
             >
-               <div className='divq div2'><span>Is your in-house team drowning in tasks and lacking strategic foresight?</span></div>
+               <div className='divq divsec2'><span>Is your in-house team drowning in tasks and lacking strategic foresight?</span></div>
             </AnimatedOnScroll>
         
      </div>
-     <div className='imgdiv' onClick={()=>navigate('/contact-us')}><span>See How we can help!</span>
-      </div>
+     <AnimatedOnScroll
+                animationIn="fadeIn"
+              
+            > <div className='imgdiv' onClick={()=>navigate('/contact-us')}><span>See How we can help!</span>
+      </div>  </AnimatedOnScroll>
       <div className='questions'>
       <AnimatedOnScroll
                 animationIn="bounceInRight"
               
             >
- <div className='divq div3'><span>Is your financial department a bottleneck hindering your growth?</span></div>
+ <div className='divq divsec3'><span>Is your financial department a bottleneck hindering your growth?</span></div>
 
             </AnimatedOnScroll>
      
@@ -41,7 +44,7 @@ const Question = () => {
               
             >
 
-<div className='divq div4'><span>Bogged down with sales calls to evaluating tools and implementing them?</span></div>
+<div className='divq divsec4'><span>Bogged down with sales calls to evaluating tools and implementing them?</span></div>
             </AnimatedOnScroll>
       
       </div>

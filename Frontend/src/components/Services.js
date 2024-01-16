@@ -2,6 +2,7 @@ import React from 'react';
 import {useState} from 'react';
 import Paper from '@mui/material/Paper';
 import 'animate.css';
+import { AnimatedOnScroll } from "react-animated-css-onscroll";
 import ReactCardFlip from "react-card-flip";
 import Question from './Question';
 import './Service.css'
@@ -56,21 +57,28 @@ const Services = () => {
   const [flip7, setFlip7] = useState(false);
  const navigate = useNavigate()
   return (
+    <div style={{width:'88.2%',margin:'auto'}}>
     <div className='service-container'>
-      <p className='service-title'>Level up your finance game. Unplug from fixed costs, plug into on-demand financial services.<br/> <span >Future of finance reimagined to be <span style={{fontSize:'1.25rem',fontWeight:'500'}}>Finance As A Service.</span>  Pay for customized, timely solutions that you need.</span></p>
+      
+      <AnimatedOnScroll
+                animationIn="bounceInRight" style={{width:'100%'}} > <p className='service-title'>Level up your finance game. Unplug from fixed costs, plug into on-demand financial services.<br/> <span >Future of finance reimagined to be <span style={{fontSize:'1.25rem',fontWeight:'500'}}>Finance As A Service.</span>  Pay for customized, timely solutions that you need.</span></p>
+      </AnimatedOnScroll>     
        <div className='logo-des'>
         <div style={{width:'50%'}}>
-          <img src={f9} alt="f9"></img>
+        <AnimatedOnScroll
+                animationIn="bounceInRight" >
+          <img src={f9} alt="f9"></img></AnimatedOnScroll>
         </div>
         <div>
-      <p className='logo-des-p'>Partner with our on-demand finance department. From bookkeeping to strategic planning, M&A, fund & investment accounting and more, our certified team manages it all. </p>
-    
+        <AnimatedOnScroll
+                animationIn="bounceInRight" > <p className='logo-des-p'>Partner with our on-demand finance department. From bookkeeping to strategic planning, M&A, fund & investment accounting and more, our certified team manages it all. </p>
+    </AnimatedOnScroll>
       </div>
       </div>
       <p className='logo-des-a'>Free yourself to prioritize business growth.</p>
       <Question/>
    
-      <div className='boxesss' >
+      <div id="servicesSection" className='boxesss' >
       <ReactCardFlip isFlipped={flip}
             flipDirection="vertical">
       <Paper elevation={5} className='service-paper'  onClick={() => setFlip(!flip)}>
@@ -197,14 +205,19 @@ const Services = () => {
       </ReactCardFlip>
       </div>
       <div className='conclusion'>
-        <div className='img-div1'>  <img src={AboutImg} alt="About Us"  /></div>
-           <div className='conclusion-text'>
-            <p>With FinTeam your dedicated accounting and Finance team in-charge, you're libertated.....
+      <AnimatedOnScroll
+                animationIn="bounceInRight" >  <div className='img-div1'>  <img src={AboutImg} alt="About Us"  /></div></AnimatedOnScroll>
+          <AnimatedOnScroll
+                animationIn="bounceInLeft" >  <div className='conclusion-text'>
+             <p>With FinTeam your dedicated accounting and Finance team in-charge, you're libertated.....
           <span>   
   <br/>to channel your energy where it counts most ,nurturing the growth of your business. We're not just a service; we're your strategic ally in unlocking your business's full potential.</span> 
-</p>  <div className='conclusion-btn'>Talk to us</div></div> 
+</p> 
+
+ <div className='conclusion-btn' onClick={()=>navigate('/contact-us')}>Talk to us</div></div> </AnimatedOnScroll>
    
       </div>
+    </div>
     </div>
   )
 };

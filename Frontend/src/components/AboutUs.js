@@ -27,9 +27,10 @@ const AboutUs = () => {
   ];
 
   return (
-    <>
+    <div style={{width:'88.2%',margin:'auto'}}>
     <div className='container'>
       {/* Image on the left */}
+      
       <div className='sub-container-1'>
         <img src={AboutImg} alt="About Us"  />
       </div>
@@ -49,7 +50,7 @@ const AboutUs = () => {
       
     </div>
     <div >
-    <h2 className="key-features" sx={{overflow:'hidden', marginLeft:'1rem'}}>Key Features</h2>
+    
     <div className='container-2'>
       
     {keyFeatures.map((feature, index) => (
@@ -64,11 +65,12 @@ const AboutUs = () => {
   </div>
   {/* <Values/> */}
   <div className='container-3'>
-     <h2 className='key-features'> From Founder's Pen</h2>
+   
      <div className='container-3-sub'>
       <div className='container-3-sub-div1'><img src={priya} alt='priya pic'/></div>
-      <div className='container-3-sub-div2'><Paper elevation={3}><p>
-      Priya Chanduraj is a seasoned finance and business transformation leader with over 20 years of experience. She excels at aligning financial strategies with overall business goals, utilizing her technical expertise and deep business understanding to craft tailored solutions for clients' unique accounting and finance needs. Her multi-faceted skills include M&A execution, systems optimization, process improvement, financial reporting, budgeting, cash flow management, forecasting, and internal controls.
+      <div className='container-3-sub-div2'><Paper elevation={3}>
+      <h2 className='key-features'> From Founder's Pen</h2><p>
+      Priya Chanduraj is a seasoned finance and business transformation leader with over 20+ years of experience. She excels at aligning financial strategies with overall business goals, utilizing her technical expertise and deep business understanding to craft tailored solutions for clients' unique accounting and finance needs. Her multi-faceted skills include M&A execution, systems optimization, process improvement, financial reporting, budgeting, cash flow management, forecasting, and internal controls.
 
 Previously, Priya served as CFO at BlueWave Energy, managing their financial operations. Her prior experience includes senior finance roles at Fortune 500 companies like Schneider Electric and AES,
  as well as the World Bank's IFC. Notably, Priya actively contributes her financial expertise to non-profit boards, including the Greater Boston Salvation Army and the Finance Executive International Boston Chapter.
@@ -76,7 +78,7 @@ Previously, Priya served as CFO at BlueWave Energy, managing their financial ope
         </p></Paper></div>
      </div>
   </div>
-  </>
+  </div>
   );
 };
 
