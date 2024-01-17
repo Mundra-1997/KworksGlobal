@@ -29,7 +29,9 @@
         display: inline-block;
         width: 3rem;
         height: auto;
-        background-color:  #79c8a4;
+        background-color:#e6edf0c2;
+        color: white;
+        margin-right: 5px;
     }
     .nav_items{
         display: none-;

@@ -2,6 +2,7 @@ import React from 'react';
 import Grid from '@mui/material/Grid';
 import './AboutUs.css'
 import Typography from '@mui/material/Typography';
+import { AnimatedOnScroll } from "react-animated-css-onscroll";
 import Paper from '@mui/material/Paper';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
@@ -32,11 +33,14 @@ const AboutUs = () => {
       {/* Image on the left */}
       
       <div className='sub-container-1'>
-        <img src={AboutImg} alt="About Us"  />
+      <AnimatedOnScroll
+                animationIn="bounceInRight" >  <img src={AboutImg} alt="About Us"  /></AnimatedOnScroll>
       </div>
       {/* Text content on the right */}
       <div  className='sub-container-2'>
         <div elevation={3} style={{ padding: '20px', height: '100%' }}>
+        <AnimatedOnScroll
+                animationIn="bounceInLeft" >
           <h1 className='heading' style={{overflow:'hidden'}}  gutterBottom>
            We are your dedicated Finance Team !
           </h1>
@@ -44,7 +48,7 @@ const AboutUs = () => {
             Founded in September 2023, FinTeam's vision is to transform the financial landscape for businesses of all sizes and bring the future of managed financial services to small to medium-sized companies.
             Our mission is to empower businesses with the appropriate financial tools and expertise needed so they can perform wonders. We believe that by simplifying financial management, we enable our clients to focus on what they do best while we handle the numbers. Together, we're shaping a future where financial success is within reach for every business.
           </p>
-          
+          </AnimatedOnScroll>
         </div>
       </div>
       

@@ -98,7 +98,8 @@
   @media (max-width:767px) {
    .banner-heading{
     width: 100%;
-   
+    justify-content: center;
+    align-items: center;
     font-size: 1rem;
     margin-bottom: 1rem
    }
@@ -106,10 +107,12 @@
     font-size: 1.7rem;
     font-weight: 700;
     width: 100%;
+    text-align: center;
    }
    .sub-heading{
     font-size: 1.5rem;
     margin-top: 1rem;
+    text-align: center;
 
    }
    .img-div{
@@ -117,7 +120,7 @@
    }
    .banner-heading button{
     font-size: 1rem;
-    width: 50%;
+    
    }
    .banner-div{
    
