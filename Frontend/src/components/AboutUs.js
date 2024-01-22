@@ -2,6 +2,7 @@ import React from 'react';
 import Grid from '@mui/material/Grid';
 import './AboutUs.css'
 import Typography from '@mui/material/Typography';
+import Logo from '../image/final.png';
 import { AnimatedOnScroll } from "react-animated-css-onscroll";
 import Paper from '@mui/material/Paper';
 import List from '@mui/material/List';
@@ -31,11 +32,12 @@ const AboutUs = () => {
     <>
     <div className='container'>
       {/* Image on the left */}
-      
-      <div className='sub-container-1'>
       <AnimatedOnScroll
-                animationIn="bounceInRight" >  <img src={AboutImg} alt="About Us"  /></AnimatedOnScroll>
+                animationIn="bounceInRight" >  
+      <div className='sub-container-1'>
+      <img src={AboutImg} alt="About Us"  />    <img src={Logo} alt="Logo" style={{ width: '120px',marginBottom:'1rem' }} />
       </div>
+      </AnimatedOnScroll>
       {/* Text content on the right */}
       <div  className='sub-container-2'>
         <div elevation={3} style={{ padding: '20px', height: '100%' }}>
