@@ -7,12 +7,12 @@ const ContactUs = () => {
       <div className='div1'>
         {/* <div className='icon'><img src={co}></img></div> */}
         <h1 className='hero-head'>Book a Free Consultation</h1>
-        <p className='hero-para'>Talk to us to see what running a business is like with FinTeam<br/> on your side.</p>
-        <p>Drop us email at :<b> info@finTeam.one</b></p>
+        <p className='hero-para'>Talk to us to see what running a business is like with FinTeam on your side.</p>
+        <p className='drop'>Drop us email at :<b> info@finTeam.one</b></p>
       </div>
       <div className='div2'>
-        <div className='book'>
-            <form> 
+      
+        <form action="https://formspree.io/f/xkndojqq" method="POST">
          
         <input
           type="text"
@@ -58,7 +58,7 @@ const ContactUs = () => {
         <button type="submit">Submit</button>
             </form>
         </div>
-      </div>
+     
     </div>
   )
 }

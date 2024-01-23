@@ -5,3 +5,14 @@
     padding: 1rem;
     background-color: #e6edf0c2;
 }
+.reserved1{
+  
+}
+.reserved2{
+    text-align: end;
+}
+@media (max-width:767px){
+    .footer-main{
+
+    }
+}
