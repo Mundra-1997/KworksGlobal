@@ -55,7 +55,9 @@ const AboutUs = () => {
       </div>
       
     </div>
-    <div >
+    <AnimatedOnScroll
+                animationIn="bounceInRight" >
+ 
     
     <div className='container-2'>
       
@@ -67,13 +69,18 @@ const AboutUs = () => {
               </div>
             ))}
   </div>
+</AnimatedOnScroll>
 
-  </div>
   {/* <Values/> */}
+ 
   <div className='container-3'>
    
      <div className='container-3-sub'>
-      <div className='container-3-sub-div1'><img src={priya} alt='priya pic'/></div>
+     <AnimatedOnScroll
+                animationIn="bounceInRight" >
+      <div className='container-3-sub-div1'><img src={priya} alt='priya pic'/></div></AnimatedOnScroll>
+      <AnimatedOnScroll
+                animationIn="bounceInLeft" >
       <div className='container-3-sub-div2'><Paper elevation={3}>
       <h2 className='key-features'> From Founder's Pen</h2><p>
       Priya Chanduraj is a seasoned finance and business transformation leader with over 20+ years of experience. She excels at aligning financial strategies with overall business goals, utilizing her technical expertise and deep business understanding to craft tailored solutions for clients' unique accounting and finance needs. Her multi-faceted skills include M&A execution, systems optimization, process improvement, financial reporting, budgeting, cash flow management, forecasting, and internal controls.
@@ -82,6 +89,7 @@ Previously, Priya served as CFO at BlueWave Energy, managing their financial ope
  as well as the World Bank's IFC. Notably, Priya actively contributes her financial expertise to non-profit boards, including the Greater Boston Salvation Army and the Finance Executive International Boston Chapter.
  Driven by a mission to fuel small business success, she leverages technology and talent management to solve their financial needs.
         </p></Paper></div>
+        </AnimatedOnScroll>
      </div>
   </div>
   </>

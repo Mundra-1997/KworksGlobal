@@ -67,13 +67,13 @@ const Navbar = () => {
         open={open}
       >
         <Menu onClick={handleClick} selectedKeys={[current]} mode="vertical"    >
-        <Menu.Item key="home">
+        <Menu.Item key="home" onClick={()=>navigate('/')}>
             HOME
           </Menu.Item>
-          <Menu.Item key="aboutus" >
+          <Menu.Item key="aboutus" onClick={()=>navigate('/about-us')}  >
             ABOUT US
           </Menu.Item>
-          <Menu.Item key="services" >
+          <Menu.Item key="services"  onClick={()=>navigate('/services')}>
             SERVICES
           </Menu.Item>
           <Menu.Item key="contactus" onClick={()=>navigate('/contact-us')} >
