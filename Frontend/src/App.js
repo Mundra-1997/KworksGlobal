@@ -6,6 +6,7 @@ import ContactUs from './components/ContactUs'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Footer from './components/Footer';
 import NewServices from './components/NewServices';
+import Terms from './components/Terms';
 
 // import ContactModal from './components/ContactModal';
 function App() {
@@ -20,6 +21,7 @@ function App() {
             <Route path='/' element={<Home />} />
              <Route path='/contact-us' element={<ContactUs/>}/>
              <Route path='/services' element={<NewServices/>}/>
+             <Route path='/termsNconditions' element={<Terms/>}/>
           </Routes>
         <Footer/>
         </Router>

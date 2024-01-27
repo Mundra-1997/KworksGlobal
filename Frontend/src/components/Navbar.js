@@ -34,7 +34,7 @@ const Navbar = () => {
     <div className='main-nav'>
     
       <div className="nav"  >
-         <div className='logo_img'>
+         <div className='logo_img' onClick={()=>navigate('/')}>
           <img src={w} alt='w' style={{    height: '4rem' ,width: '5rem' }}></img>
           <img src={Logo} alt="Logo" style={{ width: '120px',marginBottom:'1rem' }} />
         

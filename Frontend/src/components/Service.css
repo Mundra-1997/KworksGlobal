@@ -110,6 +110,7 @@
    width: 80%;
    line-height: 5px;
    line-height: 1rem;
+   text-align: center;
 }
 .conclusion{
     width: 100%;
@@ -154,14 +155,19 @@
 @media (max-width:767px){
     .boxesss{
         grid-template-columns: repeat(1, 1fr); 
+        gap: 32px;
+        margin-top: 5rem;
     }
     .service-container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 24px;}
+    .service-paper{
+      width: 80%;
+      height: 15rem;     
     }
-  
     .service-title{
         font-size: 1.5rem;
         text-align: center;
@@ -175,8 +181,8 @@
         padding: 1rem;
         margin: 0;
     }
-    .back-side{
-       
+    .back-side p{
+        text-align: center;
      }
     .service-heading{
         font-size: 1rem;
