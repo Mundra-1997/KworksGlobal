@@ -71,6 +71,7 @@
     margin: 5%;
     cursor: pointer;
     height: 250px; 
+    box-shadow: 3px 3px 3px 3px rgb(207, 207, 207);
 }
 .react-card-front{
     display: flex;
@@ -105,6 +106,7 @@
     margin: 5%;
     width: 75%;
     height: 250px; 
+    box-shadow: 3px 3px 3px 3px rgb(207, 207, 207);
 }
 .back-side p{
    width: 80%;
@@ -156,7 +158,7 @@
     .boxesss{
         grid-template-columns: repeat(1, 1fr); 
         gap: 32px;
-        margin-top: 5rem;
+        margin-top: 0;
     }
     .service-container {
         display: flex;
@@ -166,23 +168,20 @@
         gap: 24px;}
     .service-paper{
       width: 80%;
-      height: 15rem;     
+   
     }
     .service-title{
+        margin-top: 0;
         font-size: 1.5rem;
         text-align: center;
     }
     .service-title span{
         font-size: 1.5rem;
     }
-    .service-paper{
-        
-    
-        padding: 1rem;
-        margin: 0;
-    }
+ 
     .back-side p{
         text-align: center;
+        font-size: 15px;
      }
     .service-heading{
         font-size: 1rem;
@@ -192,6 +191,7 @@
         flex-direction: column;
         padding: 1rem;
         clip-path: none;
+        margin-bottom: 0;
     }
     .logo-des-p{
         font-size: 1rem;

@@ -22,6 +22,7 @@ import f7 from '../../src/image/payroll.svg'
 import f8 from '../../src/image/strategic.svg'
 import f9 from '../../src/image/whiteLogo11.svg'
 import NewServices from './NewServices';
+import Testimonials from './Testimonials';
 const data = [
   {
     title: "Finance As Service",
@@ -73,6 +74,7 @@ const Services = () => {
       <Question/>
    
       <NewServices/>
+      <Testimonials/>
       <div className='conclusion'>
       <AnimatedOnScroll
                 animationIn="bounceInRight" >  <div className='img-div1'>  <img src={AboutImg} alt="About Us"  /></div></AnimatedOnScroll>
@@ -86,6 +88,7 @@ const Services = () => {
  <div className='conclusion-btn' onClick={()=>navigate('/contact-us')}>Talk to us</div></div> </AnimatedOnScroll>
    
       </div>
+     
     </div>
   
   )

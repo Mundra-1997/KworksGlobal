@@ -12,7 +12,7 @@ const ContactUs = () => {
       </div>
       <div className='div2'>
       
-        <form action="https://formspree.io/f/xkndojqq" method="POST">
+        <form action="https://formspree.io/f/mayrqkzz" method="POST">
          
         <input
           type="text"

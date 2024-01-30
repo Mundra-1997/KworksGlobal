@@ -107,7 +107,7 @@
     background: linear-gradient(to left top, #134d65, #134d65);
 }
 .container-3-sub-div2{
-  width: 80vw;
+  width: 75vw;
   margin-right: 1rem;
   overflow: auto;
 }
@@ -117,7 +117,7 @@
     text-align: left;
     line-height: 1.5rem;
      text-wrap: wrap;
-     margin-right: 1rem;
+    
 }
 @media  (min-width: 768px) and (max-width: 1023px){
    .container{

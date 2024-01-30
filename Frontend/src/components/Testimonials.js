@@ -1,18 +1,29 @@
 import React from 'react'
-import './FinanceAsService.css'
+import './Testimonial.css'
 import 'animate.css';
-const FinanceAsService = () => {
+import { AnimatedOnScroll } from "react-animated-css-onscroll";
+const Testimonials = () => {
   return (
-    <div className='main-container'>
-        <h1>Finance As A Service</h1>
-        <div className='div-1 sub-div'><h3 className='com-h3'>Bookkeeping & Accounting</h3><p className='com-p'>Stay organized with accurate and up-to-date financial records.</p></div>
-        <div className='div-2 sub-div'><h3 className='com-h3'>Financial Analysis</h3><p className='com-p'>Gain insights into your financial health and make data-driven decisions.</p></div>
-        <div className='div-3 sub-div'><h3 className='com-h3'>Cash Flow Management</h3><p className='com-p'>Optimize cash flow and working capital.</p></div>
-        <div className='div-4 sub-div'><h3 className='com-h3'>Tax Planning & Compliance</h3><p className='com-p'>Ensure tax compliance and minimize your tax burden.</p></div>
-        <div className='div-5 sub-div'><h3 className='com-h3'>Strategic Financial Advice</h3><p className='com-p'>Get expert guidance on financial strategy and planning.</p></div>
+    <div className='main-test'>
+      <AnimatedOnScroll
+                animationIn="bounceInRight" >
+      <div className='test'>
       
+       <div className='feedback'><p className='feedbackpara'><span className='comma'>" </span> 
+       Protom International engaged FinTeam to come in and put processes 
+       in place that the company desperately needed to allow us to move forward in an
+        organized fashion and helping us to better understand our pricing model and business exposure. 
+        FinTeam quickly exceeded our expectations and have allowed us to focus on priorities outlined by
+         their detailed review and plan for our ongoing operational and revenue needs.
+          I would highly recommend FinTeam to any organization that wants to optimize their performance, 
+           create accountability, and be a strategic partner to their business.
+       <span className='comma'> "</span></p></div>
+        <div className='author'><span>- Bill Behnke </span><span>CEO, The Behnke Group</span></div>
+      
+        </div>
+        </AnimatedOnScroll>
     </div>
   )
 }
 
-export default FinanceAsService
+export default Testimonials

@@ -1,0 +1,46 @@
+.main-test{
+   background:#134d65;
+   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+   height: 40vh;
+
+}
+.test{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    padding: 2rem 1rem;
+    gap: 24px;
+}
+.feedbackpara{
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 170%;
+    color: white;
+    overflow: hidden;
+    text-align: center;
+}
+.comma{
+    font-size: 2rem;
+    color: white;
+}
+.author{
+    >span{
+        color: white;
+    }
+}
+
+@media (max-width:767px){
+    .main-test{
+        height: 70vh;
+    }
+    .test{
+        padding: 1rem 0.5rem;
+    }
+    .feedbackpara{
+        line-height: 130%;
+       
+    }
+}
