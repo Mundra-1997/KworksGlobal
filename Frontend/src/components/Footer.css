@@ -1,5 +1,9 @@
 .footer-main{
-    position: absolute;
+    /* position:absolute; */
+    /* position:fixed; */
+    margin-top: auto;
+    width: 100%;
+    bottom: 0;
     display: flex;
     justify-content: space-between;
     align-items:  center ;

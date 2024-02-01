@@ -5,7 +5,8 @@
     align-items: center;
     gap: 32px;
     width: 88.2%;
-    margin: 5rem auto 2rem auto;
+    margin: 0rem auto 0rem auto;
+    min-height: 100vh;
 }
 .div1{
   display: flex;
