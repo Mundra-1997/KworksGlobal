@@ -3,6 +3,7 @@ import './Terms.css'
 import 'animate.css';
 const Terms = () => {
   return (
+    
     <div className='terms-container'>
       <h1 className='heading-main'>Terms and Conditions</h1>
        <div className='term-div'>
