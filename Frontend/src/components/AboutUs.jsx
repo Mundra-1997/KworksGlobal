@@ -18,6 +18,8 @@ import AboutImg from '../image/cool.png';
 import { ListItemIcon } from '@mui/material';
 import Values from './Values';
 import priya from '../image/Picture1.jpg'
+import { Helmet } from 'react-helmet';
+
 const AboutUs = () => {
   const keyFeatures = [
     { text: 'Team of Experts', icon: <AccountCircleIcon fontSize='80px'/> },
@@ -30,11 +32,12 @@ const AboutUs = () => {
 
   return (
     <>
-    <head>
-      <title>Finteam - About Us</title>
-      <meta name="About Us Page" content="Founded in September 2023, FinTeam's vision is to transform the financial landscape for businesses of all sizes and bring the future of managed financial services to small to medium-sized companies" />
-      <meta name="About Us" content="About Us Page of Finteam" />
-    </head>
+    <Helmet>
+        <title>Finteam - About</title>
+        <meta name="description" content="Our mission is to empower businesses with the appropriate financial tools and expertise needed so they can perform wonders." />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="/about" />
+    </Helmet>
     <div className='container'>
       {/* Image on the left */}
       <AnimatedOnScroll
