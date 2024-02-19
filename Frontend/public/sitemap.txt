@@ -5,4 +5,5 @@ https://www.finteam.one/
 https://www.finteam.one/about-us/
 https://www.finteam.one/services/
 https://www.finteam.one/contact-us/
-https://www.example.com/index.html
+https://www.finteam.one/index.html/
+http://www.finteam.one/termsNconditions/
