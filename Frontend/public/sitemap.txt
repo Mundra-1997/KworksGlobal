@@ -1,0 +1,8 @@
+# Sitemap
+# Generated: February 19, 2024
+
+https://www.finteam.one/
+https://www.finteam.one/about-us/
+https://www.finteam.one/services/
+https://www.finteam.one/contact-us/
+https://www.example.com/index.html
