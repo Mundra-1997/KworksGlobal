@@ -53,7 +53,7 @@ const Services = () => {
   const navigate = useNavigate();
   return (
     <>
-    <Helmet>
+      <Helmet>
         <title>Finteam - Home</title>
         <meta
           name="description"
@@ -61,7 +61,7 @@ const Services = () => {
         />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.finteam.one" />
-    </Helmet>
+      </Helmet>
       <div className="service-container">
         <AnimatedOnScroll animationIn="bounceInRight" style={{ width: "100%" }}>
           {" "}
@@ -115,7 +115,7 @@ const Services = () => {
             <div className="conclusion-text">
               <p>
                 With FinTeam your dedicated accounting and Finance team
-                in-charge, you're libertated.....
+                in-charge, you're liberated.....
                 <span>
                   <br />
                   to channel your energy where it counts most, nurturing the
